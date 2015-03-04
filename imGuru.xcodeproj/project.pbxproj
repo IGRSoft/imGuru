@@ -18,7 +18,6 @@
 		A509126A1AA7A1B400C93152 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911311AA7A1B400C93152 /* AFSecurityPolicy.m */; };
 		A509126B1AA7A1B400C93152 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911331AA7A1B400C93152 /* AFURLConnectionOperation.m */; };
 		A509126C1AA7A1B400C93152 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911351AA7A1B400C93152 /* AFURLRequestSerialization.m */; };
-		A509126D1AA7A1B400C93152 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911371AA7A1B400C93152 /* AFURLResponseSerialization.m */; };
 		A509126E1AA7A1B400C93152 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911391AA7A1B400C93152 /* AFURLSessionManager.m */; };
 		A50912BC1AA7A1B400C93152 /* IMGResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911BF1AA7A1B400C93152 /* IMGResponseSerializer.m */; };
 		A50912BD1AA7A1B400C93152 /* IMGSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911C11AA7A1B400C93152 /* IMGSession.m */; };
@@ -48,6 +47,7 @@
 		A50912D51AA7A1B400C93152 /* IMGImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F61AA7A1B400C93152 /* IMGImageRequest.m */; };
 		A50912D61AA7A1B400C93152 /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F81AA7A1B400C93152 /* IMGMemeGen.m */; };
 		A50912D71AA7A1B400C93152 /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
+		A50913571AA7AB4A00C93152 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +84,6 @@
 		A50911331AA7A1B400C93152 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
 		A50911341AA7A1B400C93152 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		A50911351AA7A1B400C93152 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		A50911361AA7A1B400C93152 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		A50911371AA7A1B400C93152 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		A50911381AA7A1B400C93152 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
 		A50911391AA7A1B400C93152 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
 		A50911BE1AA7A1B400C93152 /* IMGResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGResponseSerializer.h; path = ImgurSession/IMGResponseSerializer.h; sourceTree = "<group>"; };
@@ -93,7 +91,7 @@
 		A50911C01AA7A1B400C93152 /* IMGSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGSession.h; path = ImgurSession/IMGSession.h; sourceTree = "<group>"; };
 		A50911C11AA7A1B400C93152 /* IMGSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGSession.m; path = ImgurSession/IMGSession.m; sourceTree = "<group>"; };
 		A50911C21AA7A1B400C93152 /* ImgurSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgurSession.h; path = ImgurSession/ImgurSession.h; sourceTree = "<group>"; };
-		A50911C41AA7A1B400C93152 /* IMGAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAccount.h; sourceTree = "<group>"; };
+		A50911C41AA7A1B400C93152 /* IMGAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAccount.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A50911C51AA7A1B400C93152 /* IMGAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAccount.m; sourceTree = "<group>"; };
 		A50911C61AA7A1B400C93152 /* IMGAccountSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAccountSettings.h; sourceTree = "<group>"; };
 		A50911C71AA7A1B400C93152 /* IMGAccountSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAccountSettings.m; sourceTree = "<group>"; };
@@ -147,6 +145,8 @@
 		A50911F81AA7A1B400C93152 /* IMGMemeGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGMemeGen.m; sourceTree = "<group>"; };
 		A50911F91AA7A1B400C93152 /* IMGNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGNotificationRequest.h; sourceTree = "<group>"; };
 		A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGNotificationRequest.m; sourceTree = "<group>"; };
+		A50913551AA7AB4A00C93152 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		A5CB44DA1AA794F70037C615 /* imGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44F21AA794F70037C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,6 +204,8 @@
 		A50911221AA7A1B400C93152 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				A50913551AA7AB4A00C93152 /* AFURLResponseSerialization.h */,
+				A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */,
 				A50911271AA7A1B400C93152 /* AFHTTPRequestOperation.h */,
 				A50911281AA7A1B400C93152 /* AFHTTPRequestOperation.m */,
 				A50911291AA7A1B400C93152 /* AFHTTPRequestOperationManager.h */,
@@ -219,8 +221,6 @@
 				A50911331AA7A1B400C93152 /* AFURLConnectionOperation.m */,
 				A50911341AA7A1B400C93152 /* AFURLRequestSerialization.h */,
 				A50911351AA7A1B400C93152 /* AFURLRequestSerialization.m */,
-				A50911361AA7A1B400C93152 /* AFURLResponseSerialization.h */,
-				A50911371AA7A1B400C93152 /* AFURLResponseSerialization.m */,
 				A50911381AA7A1B400C93152 /* AFURLSessionManager.h */,
 				A50911391AA7A1B400C93152 /* AFURLSessionManager.m */,
 			);
@@ -470,7 +470,6 @@
 				A50912D31AA7A1B400C93152 /* IMGEndpoint.m in Sources */,
 				A50912BE1AA7A1B400C93152 /* IMGAccount.m in Sources */,
 				A50912D21AA7A1B400C93152 /* IMGConversationRequest.m in Sources */,
-				A509126D1AA7A1B400C93152 /* AFURLResponseSerialization.m in Sources */,
 				A50912CD1AA7A1B400C93152 /* NSDictionary+IMG.m in Sources */,
 				A50912CE1AA7A1B400C93152 /* NSError+IMGError.m in Sources */,
 				A50912D01AA7A1B400C93152 /* IMGAlbumRequest.m in Sources */,
@@ -484,6 +483,7 @@
 				A50912CC1AA7A1B400C93152 /* IMGVote.m in Sources */,
 				A50912D51AA7A1B400C93152 /* IMGImageRequest.m in Sources */,
 				A50912691AA7A1B400C93152 /* AFNetworkReachabilityManager.m in Sources */,
+				A50913571AA7AB4A00C93152 /* AFURLResponseSerialization.m in Sources */,
 				A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */,
 				A50912C01AA7A1B400C93152 /* IMGAlbum.m in Sources */,
 				A50912CF1AA7A1B400C93152 /* IMGAccountRequest.m in Sources */,
