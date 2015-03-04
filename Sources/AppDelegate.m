@@ -32,7 +32,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     self.waitingAuth = NO;
-    [IMGSession anonymousSessionWithClientID:ClientID withDelegate:self];
+    
+    [self authorizeTapped:self];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -57,8 +58,7 @@
         {
             self.waitingAuth = NO;
             
-            [self.imgSession setAuthenticationInputCode:pin];
-            [self.imgSession authenticate];
+            [self.imgSession authenticateWithCode:pin];
         }
     }
     
@@ -68,10 +68,12 @@
 
 - (IBAction)authorizeTapped:(id)sender {
     
-    if([IMGSession sharedInstance].isAnonymous) {
+    if (self.imgSession.isAnonymous || self.imgSession == nil) {
+        
+        [self.window makeKeyAndOrderFront:self];
+        [self.window center];
         
         self.waitingAuth = YES;
-        self.stateLabel.stringValue = @"Logging In";
         
         //set your credentials to reset the session to your app
         self.imgSession = [IMGSession authenticatedSessionWithClientID:ClientID
@@ -80,6 +82,10 @@
                                                           withDelegate:self];
         [self.imgSession authenticate];
         
+    } else {
+        
+        self.imgSession = [IMGSession anonymousSessionWithClientID:ClientID
+                                                      withDelegate:self];
     }
 }
 
@@ -95,7 +101,26 @@
 
 -(void)imgurSessionAuthStateChanged:(IMGAuthState)state;
 {
+    self.authButton.title = @"Log In";
     
+    switch (state)
+    {
+        case IMGAuthStateAuthenticated:
+            self.authButton.title = @"Log Out";
+            break;
+        case IMGAuthStateAwaitingCodeInput:
+            self.stateLabel.stringValue = @"Logging In";
+            break;
+        case IMGAuthStateBad:
+        case IMGAuthStateNone:
+        case IMGAuthStateAnon:
+        case IMGAuthStateExpired:
+        default:
+            self.stateLabel.stringValue = @"Not Authorized";
+            break;
+    }
+    
+    self.authButton.enabled = (state != IMGAuthStateAwaitingCodeInput && state != IMGAuthStateNone);
 }
 
 -(void)imgurSessionUserRefreshed:(IMGAccount*)user
