@@ -11,6 +11,43 @@
 		A50911191AA795DE00C93152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
 		A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911161AA795DE00C93152 /* AppDelegate.m */; };
 		A509111C1AA795DE00C93152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911171AA795DE00C93152 /* main.m */; };
+		A50912661AA7A1B400C93152 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911281AA7A1B400C93152 /* AFHTTPRequestOperation.m */; };
+		A50912671AA7A1B400C93152 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A509112A1AA7A1B400C93152 /* AFHTTPRequestOperationManager.m */; };
+		A50912681AA7A1B400C93152 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A509112C1AA7A1B400C93152 /* AFHTTPSessionManager.m */; };
+		A50912691AA7A1B400C93152 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A509112F1AA7A1B400C93152 /* AFNetworkReachabilityManager.m */; };
+		A509126A1AA7A1B400C93152 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911311AA7A1B400C93152 /* AFSecurityPolicy.m */; };
+		A509126B1AA7A1B400C93152 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911331AA7A1B400C93152 /* AFURLConnectionOperation.m */; };
+		A509126C1AA7A1B400C93152 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911351AA7A1B400C93152 /* AFURLRequestSerialization.m */; };
+		A509126D1AA7A1B400C93152 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911371AA7A1B400C93152 /* AFURLResponseSerialization.m */; };
+		A509126E1AA7A1B400C93152 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911391AA7A1B400C93152 /* AFURLSessionManager.m */; };
+		A50912BC1AA7A1B400C93152 /* IMGResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911BF1AA7A1B400C93152 /* IMGResponseSerializer.m */; };
+		A50912BD1AA7A1B400C93152 /* IMGSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911C11AA7A1B400C93152 /* IMGSession.m */; };
+		A50912BE1AA7A1B400C93152 /* IMGAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911C51AA7A1B400C93152 /* IMGAccount.m */; };
+		A50912BF1AA7A1B400C93152 /* IMGAccountSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911C71AA7A1B400C93152 /* IMGAccountSettings.m */; };
+		A50912C01AA7A1B400C93152 /* IMGAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911C91AA7A1B400C93152 /* IMGAlbum.m */; };
+		A50912C11AA7A1B400C93152 /* IMGBasicAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911CB1AA7A1B400C93152 /* IMGBasicAlbum.m */; };
+		A50912C21AA7A1B400C93152 /* IMGComment.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911CD1AA7A1B400C93152 /* IMGComment.m */; };
+		A50912C31AA7A1B400C93152 /* IMGConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911CF1AA7A1B400C93152 /* IMGConversation.m */; };
+		A50912C41AA7A1B400C93152 /* IMGGalleryAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911D11AA7A1B400C93152 /* IMGGalleryAlbum.m */; };
+		A50912C51AA7A1B400C93152 /* IMGGalleryImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911D31AA7A1B400C93152 /* IMGGalleryImage.m */; };
+		A50912C61AA7A1B400C93152 /* IMGGalleryProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911D61AA7A1B400C93152 /* IMGGalleryProfile.m */; };
+		A50912C71AA7A1B400C93152 /* IMGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911D81AA7A1B400C93152 /* IMGImage.m */; };
+		A50912C81AA7A1B400C93152 /* IMGMeme.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911DA1AA7A1B400C93152 /* IMGMeme.m */; };
+		A50912C91AA7A1B400C93152 /* IMGMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911DC1AA7A1B400C93152 /* IMGMessage.m */; };
+		A50912CA1AA7A1B400C93152 /* IMGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911DE1AA7A1B400C93152 /* IMGModel.m */; };
+		A50912CB1AA7A1B400C93152 /* IMGNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911E01AA7A1B400C93152 /* IMGNotification.m */; };
+		A50912CC1AA7A1B400C93152 /* IMGVote.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911E31AA7A1B400C93152 /* IMGVote.m */; };
+		A50912CD1AA7A1B400C93152 /* NSDictionary+IMG.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911E51AA7A1B400C93152 /* NSDictionary+IMG.m */; };
+		A50912CE1AA7A1B400C93152 /* NSError+IMGError.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911E71AA7A1B400C93152 /* NSError+IMGError.m */; };
+		A50912CF1AA7A1B400C93152 /* IMGAccountRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911EA1AA7A1B400C93152 /* IMGAccountRequest.m */; };
+		A50912D01AA7A1B400C93152 /* IMGAlbumRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911EC1AA7A1B400C93152 /* IMGAlbumRequest.m */; };
+		A50912D11AA7A1B400C93152 /* IMGCommentRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911EE1AA7A1B400C93152 /* IMGCommentRequest.m */; };
+		A50912D21AA7A1B400C93152 /* IMGConversationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F01AA7A1B400C93152 /* IMGConversationRequest.m */; };
+		A50912D31AA7A1B400C93152 /* IMGEndpoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F21AA7A1B400C93152 /* IMGEndpoint.m */; };
+		A50912D41AA7A1B400C93152 /* IMGGalleryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F41AA7A1B400C93152 /* IMGGalleryRequest.m */; };
+		A50912D51AA7A1B400C93152 /* IMGImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F61AA7A1B400C93152 /* IMGImageRequest.m */; };
+		A50912D61AA7A1B400C93152 /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F81AA7A1B400C93152 /* IMGMemeGen.m */; };
+		A50912D71AA7A1B400C93152 /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +68,85 @@
 		A50911151AA795DE00C93152 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A50911161AA795DE00C93152 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A50911171AA795DE00C93152 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A50911201AA79B5100C93152 /* imGuru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = imGuru.entitlements; sourceTree = "<group>"; };
+		A50911201AA79B5100C93152 /* imGuru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = imGuru.entitlements; path = ../imGuru.entitlements; sourceTree = "<group>"; };
+		A50911271AA7A1B400C93152 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		A50911281AA7A1B400C93152 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		A50911291AA7A1B400C93152 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		A509112A1AA7A1B400C93152 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		A509112B1AA7A1B400C93152 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		A509112C1AA7A1B400C93152 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		A509112D1AA7A1B400C93152 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		A509112E1AA7A1B400C93152 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		A509112F1AA7A1B400C93152 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		A50911301AA7A1B400C93152 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		A50911311AA7A1B400C93152 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		A50911321AA7A1B400C93152 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		A50911331AA7A1B400C93152 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		A50911341AA7A1B400C93152 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		A50911351AA7A1B400C93152 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		A50911361AA7A1B400C93152 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		A50911371AA7A1B400C93152 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		A50911381AA7A1B400C93152 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		A50911391AA7A1B400C93152 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		A50911BE1AA7A1B400C93152 /* IMGResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGResponseSerializer.h; path = ImgurSession/IMGResponseSerializer.h; sourceTree = "<group>"; };
+		A50911BF1AA7A1B400C93152 /* IMGResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGResponseSerializer.m; path = ImgurSession/IMGResponseSerializer.m; sourceTree = "<group>"; };
+		A50911C01AA7A1B400C93152 /* IMGSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMGSession.h; path = ImgurSession/IMGSession.h; sourceTree = "<group>"; };
+		A50911C11AA7A1B400C93152 /* IMGSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IMGSession.m; path = ImgurSession/IMGSession.m; sourceTree = "<group>"; };
+		A50911C21AA7A1B400C93152 /* ImgurSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImgurSession.h; path = ImgurSession/ImgurSession.h; sourceTree = "<group>"; };
+		A50911C41AA7A1B400C93152 /* IMGAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAccount.h; sourceTree = "<group>"; };
+		A50911C51AA7A1B400C93152 /* IMGAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAccount.m; sourceTree = "<group>"; };
+		A50911C61AA7A1B400C93152 /* IMGAccountSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAccountSettings.h; sourceTree = "<group>"; };
+		A50911C71AA7A1B400C93152 /* IMGAccountSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAccountSettings.m; sourceTree = "<group>"; };
+		A50911C81AA7A1B400C93152 /* IMGAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAlbum.h; sourceTree = "<group>"; };
+		A50911C91AA7A1B400C93152 /* IMGAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAlbum.m; sourceTree = "<group>"; };
+		A50911CA1AA7A1B400C93152 /* IMGBasicAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGBasicAlbum.h; sourceTree = "<group>"; };
+		A50911CB1AA7A1B400C93152 /* IMGBasicAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGBasicAlbum.m; sourceTree = "<group>"; };
+		A50911CC1AA7A1B400C93152 /* IMGComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGComment.h; sourceTree = "<group>"; };
+		A50911CD1AA7A1B400C93152 /* IMGComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGComment.m; sourceTree = "<group>"; };
+		A50911CE1AA7A1B400C93152 /* IMGConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGConversation.h; sourceTree = "<group>"; };
+		A50911CF1AA7A1B400C93152 /* IMGConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGConversation.m; sourceTree = "<group>"; };
+		A50911D01AA7A1B400C93152 /* IMGGalleryAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGGalleryAlbum.h; sourceTree = "<group>"; };
+		A50911D11AA7A1B400C93152 /* IMGGalleryAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGGalleryAlbum.m; sourceTree = "<group>"; };
+		A50911D21AA7A1B400C93152 /* IMGGalleryImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGGalleryImage.h; sourceTree = "<group>"; };
+		A50911D31AA7A1B400C93152 /* IMGGalleryImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGGalleryImage.m; sourceTree = "<group>"; };
+		A50911D41AA7A1B400C93152 /* IMGGalleryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGGalleryObject.h; sourceTree = "<group>"; };
+		A50911D51AA7A1B400C93152 /* IMGGalleryProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGGalleryProfile.h; sourceTree = "<group>"; };
+		A50911D61AA7A1B400C93152 /* IMGGalleryProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGGalleryProfile.m; sourceTree = "<group>"; };
+		A50911D71AA7A1B400C93152 /* IMGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGImage.h; sourceTree = "<group>"; };
+		A50911D81AA7A1B400C93152 /* IMGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGImage.m; sourceTree = "<group>"; };
+		A50911D91AA7A1B400C93152 /* IMGMeme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGMeme.h; sourceTree = "<group>"; };
+		A50911DA1AA7A1B400C93152 /* IMGMeme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGMeme.m; sourceTree = "<group>"; };
+		A50911DB1AA7A1B400C93152 /* IMGMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGMessage.h; sourceTree = "<group>"; };
+		A50911DC1AA7A1B400C93152 /* IMGMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGMessage.m; sourceTree = "<group>"; };
+		A50911DD1AA7A1B400C93152 /* IMGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGModel.h; sourceTree = "<group>"; };
+		A50911DE1AA7A1B400C93152 /* IMGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGModel.m; sourceTree = "<group>"; };
+		A50911DF1AA7A1B400C93152 /* IMGNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGNotification.h; sourceTree = "<group>"; };
+		A50911E01AA7A1B400C93152 /* IMGNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGNotification.m; sourceTree = "<group>"; };
+		A50911E11AA7A1B400C93152 /* IMGObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGObject.h; sourceTree = "<group>"; };
+		A50911E21AA7A1B400C93152 /* IMGVote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGVote.h; sourceTree = "<group>"; };
+		A50911E31AA7A1B400C93152 /* IMGVote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGVote.m; sourceTree = "<group>"; };
+		A50911E41AA7A1B400C93152 /* NSDictionary+IMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+IMG.h"; path = "ImgurSession/NSDictionary+IMG.h"; sourceTree = "<group>"; };
+		A50911E51AA7A1B400C93152 /* NSDictionary+IMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+IMG.m"; path = "ImgurSession/NSDictionary+IMG.m"; sourceTree = "<group>"; };
+		A50911E61AA7A1B400C93152 /* NSError+IMGError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+IMGError.h"; path = "ImgurSession/NSError+IMGError.h"; sourceTree = "<group>"; };
+		A50911E71AA7A1B400C93152 /* NSError+IMGError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+IMGError.m"; path = "ImgurSession/NSError+IMGError.m"; sourceTree = "<group>"; };
+		A50911E91AA7A1B400C93152 /* IMGAccountRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAccountRequest.h; sourceTree = "<group>"; };
+		A50911EA1AA7A1B400C93152 /* IMGAccountRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAccountRequest.m; sourceTree = "<group>"; };
+		A50911EB1AA7A1B400C93152 /* IMGAlbumRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGAlbumRequest.h; sourceTree = "<group>"; };
+		A50911EC1AA7A1B400C93152 /* IMGAlbumRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGAlbumRequest.m; sourceTree = "<group>"; };
+		A50911ED1AA7A1B400C93152 /* IMGCommentRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGCommentRequest.h; sourceTree = "<group>"; };
+		A50911EE1AA7A1B400C93152 /* IMGCommentRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGCommentRequest.m; sourceTree = "<group>"; };
+		A50911EF1AA7A1B400C93152 /* IMGConversationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGConversationRequest.h; sourceTree = "<group>"; };
+		A50911F01AA7A1B400C93152 /* IMGConversationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGConversationRequest.m; sourceTree = "<group>"; };
+		A50911F11AA7A1B400C93152 /* IMGEndpoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGEndpoint.h; sourceTree = "<group>"; };
+		A50911F21AA7A1B400C93152 /* IMGEndpoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGEndpoint.m; sourceTree = "<group>"; };
+		A50911F31AA7A1B400C93152 /* IMGGalleryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGGalleryRequest.h; sourceTree = "<group>"; };
+		A50911F41AA7A1B400C93152 /* IMGGalleryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGGalleryRequest.m; sourceTree = "<group>"; };
+		A50911F51AA7A1B400C93152 /* IMGImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGImageRequest.h; sourceTree = "<group>"; };
+		A50911F61AA7A1B400C93152 /* IMGImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGImageRequest.m; sourceTree = "<group>"; };
+		A50911F71AA7A1B400C93152 /* IMGMemeGen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGMemeGen.h; sourceTree = "<group>"; };
+		A50911F81AA7A1B400C93152 /* IMGMemeGen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGMemeGen.m; sourceTree = "<group>"; };
+		A50911F91AA7A1B400C93152 /* IMGNotificationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMGNotificationRequest.h; sourceTree = "<group>"; };
+		A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMGNotificationRequest.m; sourceTree = "<group>"; };
 		A5CB44DA1AA794F70037C615 /* imGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44F21AA794F70037C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +174,7 @@
 		A509110F1AA795DE00C93152 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A50911201AA79B5100C93152 /* imGuru.entitlements */,
 				A50911101AA795DE00C93152 /* MainMenu.xib */,
 				A50911121AA795DE00C93152 /* Images.xcassets */,
 				A50911131AA795DE00C93152 /* Info.plist */,
@@ -76,11 +192,130 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		A50911211AA7A1B400C93152 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				A50911221AA7A1B400C93152 /* AFNetworking */,
+				A50911BB1AA7A1B400C93152 /* ImgurSession */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		A50911221AA7A1B400C93152 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A50911271AA7A1B400C93152 /* AFHTTPRequestOperation.h */,
+				A50911281AA7A1B400C93152 /* AFHTTPRequestOperation.m */,
+				A50911291AA7A1B400C93152 /* AFHTTPRequestOperationManager.h */,
+				A509112A1AA7A1B400C93152 /* AFHTTPRequestOperationManager.m */,
+				A509112B1AA7A1B400C93152 /* AFHTTPSessionManager.h */,
+				A509112C1AA7A1B400C93152 /* AFHTTPSessionManager.m */,
+				A509112D1AA7A1B400C93152 /* AFNetworking.h */,
+				A509112E1AA7A1B400C93152 /* AFNetworkReachabilityManager.h */,
+				A509112F1AA7A1B400C93152 /* AFNetworkReachabilityManager.m */,
+				A50911301AA7A1B400C93152 /* AFSecurityPolicy.h */,
+				A50911311AA7A1B400C93152 /* AFSecurityPolicy.m */,
+				A50911321AA7A1B400C93152 /* AFURLConnectionOperation.h */,
+				A50911331AA7A1B400C93152 /* AFURLConnectionOperation.m */,
+				A50911341AA7A1B400C93152 /* AFURLRequestSerialization.h */,
+				A50911351AA7A1B400C93152 /* AFURLRequestSerialization.m */,
+				A50911361AA7A1B400C93152 /* AFURLResponseSerialization.h */,
+				A50911371AA7A1B400C93152 /* AFURLResponseSerialization.m */,
+				A50911381AA7A1B400C93152 /* AFURLSessionManager.h */,
+				A50911391AA7A1B400C93152 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		A50911BB1AA7A1B400C93152 /* ImgurSession */ = {
+			isa = PBXGroup;
+			children = (
+				A50911BE1AA7A1B400C93152 /* IMGResponseSerializer.h */,
+				A50911BF1AA7A1B400C93152 /* IMGResponseSerializer.m */,
+				A50911C01AA7A1B400C93152 /* IMGSession.h */,
+				A50911C11AA7A1B400C93152 /* IMGSession.m */,
+				A50911C21AA7A1B400C93152 /* ImgurSession.h */,
+				A50911C31AA7A1B400C93152 /* Models */,
+				A50911E41AA7A1B400C93152 /* NSDictionary+IMG.h */,
+				A50911E51AA7A1B400C93152 /* NSDictionary+IMG.m */,
+				A50911E61AA7A1B400C93152 /* NSError+IMGError.h */,
+				A50911E71AA7A1B400C93152 /* NSError+IMGError.m */,
+				A50911E81AA7A1B400C93152 /* Requests */,
+			);
+			path = ImgurSession;
+			sourceTree = "<group>";
+		};
+		A50911C31AA7A1B400C93152 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A50911C41AA7A1B400C93152 /* IMGAccount.h */,
+				A50911C51AA7A1B400C93152 /* IMGAccount.m */,
+				A50911C61AA7A1B400C93152 /* IMGAccountSettings.h */,
+				A50911C71AA7A1B400C93152 /* IMGAccountSettings.m */,
+				A50911C81AA7A1B400C93152 /* IMGAlbum.h */,
+				A50911C91AA7A1B400C93152 /* IMGAlbum.m */,
+				A50911CA1AA7A1B400C93152 /* IMGBasicAlbum.h */,
+				A50911CB1AA7A1B400C93152 /* IMGBasicAlbum.m */,
+				A50911CC1AA7A1B400C93152 /* IMGComment.h */,
+				A50911CD1AA7A1B400C93152 /* IMGComment.m */,
+				A50911CE1AA7A1B400C93152 /* IMGConversation.h */,
+				A50911CF1AA7A1B400C93152 /* IMGConversation.m */,
+				A50911D01AA7A1B400C93152 /* IMGGalleryAlbum.h */,
+				A50911D11AA7A1B400C93152 /* IMGGalleryAlbum.m */,
+				A50911D21AA7A1B400C93152 /* IMGGalleryImage.h */,
+				A50911D31AA7A1B400C93152 /* IMGGalleryImage.m */,
+				A50911D41AA7A1B400C93152 /* IMGGalleryObject.h */,
+				A50911D51AA7A1B400C93152 /* IMGGalleryProfile.h */,
+				A50911D61AA7A1B400C93152 /* IMGGalleryProfile.m */,
+				A50911D71AA7A1B400C93152 /* IMGImage.h */,
+				A50911D81AA7A1B400C93152 /* IMGImage.m */,
+				A50911D91AA7A1B400C93152 /* IMGMeme.h */,
+				A50911DA1AA7A1B400C93152 /* IMGMeme.m */,
+				A50911DB1AA7A1B400C93152 /* IMGMessage.h */,
+				A50911DC1AA7A1B400C93152 /* IMGMessage.m */,
+				A50911DD1AA7A1B400C93152 /* IMGModel.h */,
+				A50911DE1AA7A1B400C93152 /* IMGModel.m */,
+				A50911DF1AA7A1B400C93152 /* IMGNotification.h */,
+				A50911E01AA7A1B400C93152 /* IMGNotification.m */,
+				A50911E11AA7A1B400C93152 /* IMGObject.h */,
+				A50911E21AA7A1B400C93152 /* IMGVote.h */,
+				A50911E31AA7A1B400C93152 /* IMGVote.m */,
+			);
+			name = Models;
+			path = ImgurSession/Models;
+			sourceTree = "<group>";
+		};
+		A50911E81AA7A1B400C93152 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				A50911E91AA7A1B400C93152 /* IMGAccountRequest.h */,
+				A50911EA1AA7A1B400C93152 /* IMGAccountRequest.m */,
+				A50911EB1AA7A1B400C93152 /* IMGAlbumRequest.h */,
+				A50911EC1AA7A1B400C93152 /* IMGAlbumRequest.m */,
+				A50911ED1AA7A1B400C93152 /* IMGCommentRequest.h */,
+				A50911EE1AA7A1B400C93152 /* IMGCommentRequest.m */,
+				A50911EF1AA7A1B400C93152 /* IMGConversationRequest.h */,
+				A50911F01AA7A1B400C93152 /* IMGConversationRequest.m */,
+				A50911F11AA7A1B400C93152 /* IMGEndpoint.h */,
+				A50911F21AA7A1B400C93152 /* IMGEndpoint.m */,
+				A50911F31AA7A1B400C93152 /* IMGGalleryRequest.h */,
+				A50911F41AA7A1B400C93152 /* IMGGalleryRequest.m */,
+				A50911F51AA7A1B400C93152 /* IMGImageRequest.h */,
+				A50911F61AA7A1B400C93152 /* IMGImageRequest.m */,
+				A50911F71AA7A1B400C93152 /* IMGMemeGen.h */,
+				A50911F81AA7A1B400C93152 /* IMGMemeGen.m */,
+				A50911F91AA7A1B400C93152 /* IMGNotificationRequest.h */,
+				A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */,
+			);
+			name = Requests;
+			path = ImgurSession/Requests;
+			sourceTree = "<group>";
+		};
 		A5CB44D11AA794F70037C615 = {
 			isa = PBXGroup;
 			children = (
-				A50911201AA79B5100C93152 /* imGuru.entitlements */,
 				A50911141AA795DE00C93152 /* Sources */,
+				A50911211AA7A1B400C93152 /* Submodules */,
 				A509110F1AA795DE00C93152 /* Resources */,
 				A5CB44F01AA794F70037C615 /* imGuruTests */,
 				A5CB44DB1AA794F70037C615 /* Products */,
@@ -217,8 +452,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50912BC1AA7A1B400C93152 /* IMGResponseSerializer.m in Sources */,
+				A509126C1AA7A1B400C93152 /* AFURLRequestSerialization.m in Sources */,
+				A50912C31AA7A1B400C93152 /* IMGConversation.m in Sources */,
+				A509126B1AA7A1B400C93152 /* AFURLConnectionOperation.m in Sources */,
+				A50912CA1AA7A1B400C93152 /* IMGModel.m in Sources */,
+				A50912D41AA7A1B400C93152 /* IMGGalleryRequest.m in Sources */,
+				A509126A1AA7A1B400C93152 /* AFSecurityPolicy.m in Sources */,
+				A50912BF1AA7A1B400C93152 /* IMGAccountSettings.m in Sources */,
+				A50912C41AA7A1B400C93152 /* IMGGalleryAlbum.m in Sources */,
+				A50912C21AA7A1B400C93152 /* IMGComment.m in Sources */,
+				A50912661AA7A1B400C93152 /* AFHTTPRequestOperation.m in Sources */,
+				A509126E1AA7A1B400C93152 /* AFURLSessionManager.m in Sources */,
+				A50912CB1AA7A1B400C93152 /* IMGNotification.m in Sources */,
+				A50912D71AA7A1B400C93152 /* IMGNotificationRequest.m in Sources */,
+				A50912BD1AA7A1B400C93152 /* IMGSession.m in Sources */,
+				A50912D31AA7A1B400C93152 /* IMGEndpoint.m in Sources */,
+				A50912BE1AA7A1B400C93152 /* IMGAccount.m in Sources */,
+				A50912D21AA7A1B400C93152 /* IMGConversationRequest.m in Sources */,
+				A509126D1AA7A1B400C93152 /* AFURLResponseSerialization.m in Sources */,
+				A50912CD1AA7A1B400C93152 /* NSDictionary+IMG.m in Sources */,
+				A50912CE1AA7A1B400C93152 /* NSError+IMGError.m in Sources */,
+				A50912D01AA7A1B400C93152 /* IMGAlbumRequest.m in Sources */,
+				A50912C91AA7A1B400C93152 /* IMGMessage.m in Sources */,
+				A50912C71AA7A1B400C93152 /* IMGImage.m in Sources */,
 				A509111C1AA795DE00C93152 /* main.m in Sources */,
+				A50912681AA7A1B400C93152 /* AFHTTPSessionManager.m in Sources */,
+				A50912671AA7A1B400C93152 /* AFHTTPRequestOperationManager.m in Sources */,
+				A50912C11AA7A1B400C93152 /* IMGBasicAlbum.m in Sources */,
+				A50912C61AA7A1B400C93152 /* IMGGalleryProfile.m in Sources */,
+				A50912CC1AA7A1B400C93152 /* IMGVote.m in Sources */,
+				A50912D51AA7A1B400C93152 /* IMGImageRequest.m in Sources */,
+				A50912691AA7A1B400C93152 /* AFNetworkReachabilityManager.m in Sources */,
 				A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */,
+				A50912C01AA7A1B400C93152 /* IMGAlbum.m in Sources */,
+				A50912CF1AA7A1B400C93152 /* IMGAccountRequest.m in Sources */,
+				A50912D11AA7A1B400C93152 /* IMGCommentRequest.m in Sources */,
+				A50912C51AA7A1B400C93152 /* IMGGalleryImage.m in Sources */,
+				A50912D61AA7A1B400C93152 /* IMGMemeGen.m in Sources */,
+				A50912C81AA7A1B400C93152 /* IMGMeme.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +607,13 @@
 				CODE_SIGN_ENTITLEMENTS = imGuru.entitlements;
 				CODE_SIGN_IDENTITY = "IGR Software";
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Submodules",
+					"$(SRCROOT)/Submodules/AFNetworking",
+					"$(SRCROOT)/Submodules/AFNetworking/AFNetworking",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +627,13 @@
 				CODE_SIGN_ENTITLEMENTS = imGuru.entitlements;
 				CODE_SIGN_IDENTITY = "IGR Software";
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Submodules",
+					"$(SRCROOT)/Submodules/AFNetworking",
+					"$(SRCROOT)/Submodules/AFNetworking/AFNetworking",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

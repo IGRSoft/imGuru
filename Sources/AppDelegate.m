@@ -23,4 +23,20 @@
     // Insert code here to tear down your application
 }
 
+BOOL doNothingAtStart = NO;
+
+- (void)applicationDidBecomeActive:(NSNotification *)notification
+{
+    static BOOL skipOnStart = YES;
+    
+    if (skipOnStart)
+    {
+        skipOnStart = NO;
+        return;
+    }
+    
+    [self.window makeKeyAndOrderFront:self];
+    [self.window center];
+}
+
 @end
