@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A50911181AA795DE00C93152 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50911101AA795DE00C93152 /* MainMenu.xib */; };
+		A50911191AA795DE00C93152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
+		A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911161AA795DE00C93152 /* AppDelegate.m */; };
+		A509111C1AA795DE00C93152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911171AA795DE00C93152 /* main.m */; };
+		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5CB44EE1AA794F70037C615 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CB44D21AA794F70037C615 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CB44D91AA794F70037C615;
+			remoteInfo = imGuru;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A50911111AA795DE00C93152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A50911121AA795DE00C93152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A50911131AA795DE00C93152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50911151AA795DE00C93152 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A50911161AA795DE00C93152 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A50911171AA795DE00C93152 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A50911201AA79B5100C93152 /* imGuru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = imGuru.entitlements; sourceTree = "<group>"; };
+		A5CB44DA1AA794F70037C615 /* imGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CB44F21AA794F70037C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5CB44F31AA794F70037C615 /* imGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imGuruTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5CB44D71AA794F70037C615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CB44EA1AA794F70037C615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A509110F1AA795DE00C93152 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A50911101AA795DE00C93152 /* MainMenu.xib */,
+				A50911121AA795DE00C93152 /* Images.xcassets */,
+				A50911131AA795DE00C93152 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A50911141AA795DE00C93152 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A50911151AA795DE00C93152 /* AppDelegate.h */,
+				A50911161AA795DE00C93152 /* AppDelegate.m */,
+				A50911171AA795DE00C93152 /* main.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A5CB44D11AA794F70037C615 = {
+			isa = PBXGroup;
+			children = (
+				A50911201AA79B5100C93152 /* imGuru.entitlements */,
+				A50911141AA795DE00C93152 /* Sources */,
+				A509110F1AA795DE00C93152 /* Resources */,
+				A5CB44F01AA794F70037C615 /* imGuruTests */,
+				A5CB44DB1AA794F70037C615 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5CB44DB1AA794F70037C615 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5CB44DA1AA794F70037C615 /* imGuru.app */,
+				A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5CB44F01AA794F70037C615 /* imGuruTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5CB44F31AA794F70037C615 /* imGuruTests.m */,
+				A5CB44F11AA794F70037C615 /* Supporting Files */,
+			);
+			path = imGuruTests;
+			sourceTree = "<group>";
+		};
+		A5CB44F11AA794F70037C615 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5CB44F21AA794F70037C615 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5CB44D91AA794F70037C615 /* imGuru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CB44F71AA794F70037C615 /* Build configuration list for PBXNativeTarget "imGuru" */;
+			buildPhases = (
+				A5CB44D61AA794F70037C615 /* Sources */,
+				A5CB44D71AA794F70037C615 /* Frameworks */,
+				A5CB44D81AA794F70037C615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imGuru;
+			productName = imGuru;
+			productReference = A5CB44DA1AA794F70037C615 /* imGuru.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5CB44EC1AA794F70037C615 /* imGuruTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CB44FA1AA794F70037C615 /* Build configuration list for PBXNativeTarget "imGuruTests" */;
+			buildPhases = (
+				A5CB44E91AA794F70037C615 /* Sources */,
+				A5CB44EA1AA794F70037C615 /* Frameworks */,
+				A5CB44EB1AA794F70037C615 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5CB44EF1AA794F70037C615 /* PBXTargetDependency */,
+			);
+			name = imGuruTests;
+			productName = imGuruTests;
+			productReference = A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5CB44D21AA794F70037C615 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "IGR Software";
+				TargetAttributes = {
+					A5CB44D91AA794F70037C615 = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					A5CB44EC1AA794F70037C615 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A5CB44D91AA794F70037C615;
+					};
+				};
+			};
+			buildConfigurationList = A5CB44D51AA794F70037C615 /* Build configuration list for PBXProject "imGuru" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5CB44D11AA794F70037C615;
+			productRefGroup = A5CB44DB1AA794F70037C615 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5CB44D91AA794F70037C615 /* imGuru */,
+				A5CB44EC1AA794F70037C615 /* imGuruTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5CB44D81AA794F70037C615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50911191AA795DE00C93152 /* Images.xcassets in Resources */,
+				A50911181AA795DE00C93152 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CB44EB1AA794F70037C615 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5CB44D61AA794F70037C615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A509111C1AA795DE00C93152 /* main.m in Sources */,
+				A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CB44E91AA794F70037C615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5CB44EF1AA794F70037C615 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CB44D91AA794F70037C615 /* imGuru */;
+			targetProxy = A5CB44EE1AA794F70037C615 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A50911101AA795DE00C93152 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A50911111AA795DE00C93152 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5CB44F51AA794F70037C615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A5CB44F61AA794F70037C615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A5CB44F81AA794F70037C615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = imGuru.entitlements;
+				CODE_SIGN_IDENTITY = "IGR Software";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5CB44F91AA794F70037C615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = imGuru.entitlements;
+				CODE_SIGN_IDENTITY = "IGR Software";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5CB44FB1AA794F70037C615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = imGuruTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imGuru.app/Contents/MacOS/imGuru";
+			};
+			name = Debug;
+		};
+		A5CB44FC1AA794F70037C615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = imGuruTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imGuru.app/Contents/MacOS/imGuru";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5CB44D51AA794F70037C615 /* Build configuration list for PBXProject "imGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CB44F51AA794F70037C615 /* Debug */,
+				A5CB44F61AA794F70037C615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CB44F71AA794F70037C615 /* Build configuration list for PBXNativeTarget "imGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CB44F81AA794F70037C615 /* Debug */,
+				A5CB44F91AA794F70037C615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CB44FA1AA794F70037C615 /* Build configuration list for PBXNativeTarget "imGuruTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CB44FB1AA794F70037C615 /* Debug */,
+				A5CB44FC1AA794F70037C615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5CB44D21AA794F70037C615 /* Project object */;
+}
