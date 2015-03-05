@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 
 OS X Application.
-Upload image to imgur via context menu Share
+Upload image to [imgur site][imgur] via context menu Share
 
 **How to Use:**
 * Login to imgur;
@@ -31,3 +31,4 @@ This application is free open source software and licensed under the MIT.
 
 [tutorial]: http://www.youtube.com/watch?v=ZpNoiAbzLQ0 "tutorial link"
 [imGuru]: http://downloads.igrsoft.com/app/imGuru.zip "latest build"
+[imgur]: http://downloads.igrsoft.com/app/imGuru.zip "imgur site"
