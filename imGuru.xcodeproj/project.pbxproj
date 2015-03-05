@@ -48,7 +48,6 @@
 		A50912D61AA7A1B400C93152 /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F81AA7A1B400C93152 /* IMGMemeGen.m */; };
 		A50912D71AA7A1B400C93152 /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
 		A50913571AA7AB4A00C93152 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */; };
-		A53403F51AA8D90000631B2C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A53403F41AA8D90000631B2C /* icon.icns */; };
 		A53403F91AA8D90000631B2C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53403F81AA8D90000631B2C /* ShareViewController.m */; };
 		A53403FB1AA8D90000631B2C /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53403FA1AA8D90000631B2C /* ShareViewController.xib */; };
 		A53403FE1AA8D90000631B2C /* imgur.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A53403F01AA8D90000631B2C /* imgur.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -91,6 +90,7 @@
 		A53404261AA8D9CB00631B2C /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
+		A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,7 +213,6 @@
 		A53403B21AA8CF4400631B2C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A53403F01AA8D90000631B2C /* imgur.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = imgur.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53403F31AA8D90000631B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A53403F41AA8D90000631B2C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		A53403F61AA8D90000631B2C /* imgur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = imgur.entitlements; sourceTree = "<group>"; };
 		A53403F71AA8D90000631B2C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		A53403F81AA8D90000631B2C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
@@ -223,6 +222,7 @@
 		A5CB44F21AA794F70037C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5CB44F31AA794F70037C615 /* imGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imGuruTests.m; sourceTree = "<group>"; };
 		A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A5D57F001AA8F524002C181D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,7 +408,6 @@
 			isa = PBXGroup;
 			children = (
 				A53403F31AA8D90000631B2C /* Info.plist */,
-				A53403F41AA8D90000631B2C /* icon.icns */,
 				A53403F61AA8D90000631B2C /* imgur.entitlements */,
 			);
 			name = "Supporting Files";
@@ -572,8 +571,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */,
 				A53403FB1AA8D90000631B2C /* ShareViewController.xib in Resources */,
-				A53403F51AA8D90000631B2C /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +714,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A50911111AA795DE00C93152 /* Base */,
+				A5D57F001AA8F524002C181D /* ru */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -725,6 +725,7 @@
 		A53404001AA8D90000631B2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = imgur/imgur.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -749,6 +750,7 @@
 		A53404011AA8D90000631B2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = imgur/imgur.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;

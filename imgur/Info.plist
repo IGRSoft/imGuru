@@ -8,8 +8,6 @@
 	<string>imgur</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIconFile</key>
-	<string>icon</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.igrsoft.imGuru.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>

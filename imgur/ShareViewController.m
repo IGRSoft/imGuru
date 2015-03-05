@@ -19,6 +19,7 @@
 
 @property (weak) IBOutlet NSButton *actionButton;
 @property (weak) IBOutlet NSTextField *warningLabel;
+@property (weak) IBOutlet NSTextField *titleField;
 
 @end
 
@@ -29,7 +30,10 @@
 }
 
 - (void)loadView {
+    
     [super loadView];
+    
+    self.warningLabel.stringValue = @"Please login to imgur via imGuru";
     
     // Insert code here to customize the view
     NSExtensionItem *item = self.extensionContext.inputItems.firstObject;
@@ -38,9 +42,14 @@
     __weak typeof(self) weakSelf = self;
     if ([item.attachments.firstObject hasItemConformingToTypeIdentifier:(NSString *)kUTTypeURL]) {
         [item.attachments.firstObject loadItemForTypeIdentifier:(NSString *)kUTTypeURL options:nil completionHandler:^(NSURL *url, NSError *error) {
+            
             NSLog(@"Image path: %@", url.absoluteString);
-            weakSelf.fileURL = url;
-            weakSelf.imageView.image = [[NSImage alloc] initWithContentsOfURL:weakSelf.fileURL];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                weakSelf.fileURL = url;
+                weakSelf.imageView.image = [[NSImage alloc] initWithContentsOfURL:weakSelf.fileURL];
+                weakSelf.titleField.stringValue = [url lastPathComponent];
+            });
         }];
     }
     
@@ -56,13 +65,15 @@
     }
     
     self.actionButton.enabled = (refreshToken != nil);
-    self.warningLabel.hidden = (refreshToken != nil);
+    self.titleField.hidden = (refreshToken == nil);
+    
 }
 
 - (IBAction)send:(id)sender {
    
     [IMGImageRequest uploadImageWithFileURL:self.fileURL
-                                      title:[self.fileURL lastPathComponent] description:@""
+                                      title:self.titleField.stringValue
+                                description:@""
                           linkToAlbumWithID:nil
                                     success:^(IMGImage *image) {
                                         
@@ -77,6 +88,8 @@
                                     failure:^(NSError *error) {
                                         
                                         NSLog(@"Can't Upload file: %@", error.localizedDescription);
+                                        
+                                        [self playSystemSound:@"Basso"];
                                     }];
     
     [self.extensionContext completeRequestReturningItems:@[] completionHandler:nil];
@@ -90,6 +103,15 @@
 
 - (void)imgurSessionNeedsExternalWebview:(NSURL*)url completion:(void(^)())completion
 {
+}
+
+- (void)imgurSessionUserRefreshed:(IMGAccount*)user
+{
+    __weak typeof(self) weakSelf = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        weakSelf.warningLabel.stringValue = [NSString stringWithFormat:@"User Name: %@", user.username];
+    });
 }
 
 - (void)playSystemSound:(NSString*)name
@@ -106,5 +128,5 @@
         AudioServicesPlaySystemSound(soundID);
     }
 }
-@end
 
+@end
