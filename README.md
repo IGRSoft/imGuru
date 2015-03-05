@@ -31,4 +31,4 @@ This application is free open source software and licensed under the MIT.
 
 [tutorial]: http://www.youtube.com/watch?v=ZpNoiAbzLQ0 "tutorial link"
 [imGuru]: http://downloads.igrsoft.com/app/imGuru.zip "latest build"
-[imgur]: http://downloads.igrsoft.com/app/imGuru.zip "imgur site"
+[imgur]: http://imgur.com "imgur site"
