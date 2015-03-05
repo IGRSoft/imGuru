@@ -8,10 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ImgurSession.h"
-
-#define ClientID @"bc5111e191dfa20"
-#define ClientSecret @"a76a2be0cf75660e2dade7a86a6b2371c4cb9e95"
-
+#import "Constants.h"
 
 @interface AppDelegate () <IMGSessionDelegate>
 
@@ -22,6 +19,7 @@
 @property (strong) IMGSession *imgSession;
 @property (copy) void(^continueHandler)();
 @property (assign) BOOL waitingAuth;
+@property (nonatomic, copy) NSString *refreshToken;
 
 - (IBAction)authorizeTapped:(id)sender;
 
@@ -33,7 +31,21 @@
     
     self.waitingAuth = NO;
     
-    [self authorizeTapped:self];
+    self.imgSession = [IMGSession authenticatedSessionWithClientID:ClientID
+                                                            secret:ClientSecret
+                                                          authType:IMGPinAuth
+                                                      withDelegate:self];
+    
+    NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
+    _refreshToken = [ud objectForKey:@"refreshToken"];
+    if (_refreshToken)
+    {
+        [self restoreSession];
+    }
+    else
+    {
+        [self authorizeTapped:self];
+    }
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -58,7 +70,9 @@
         {
             self.waitingAuth = NO;
             
-            [self.imgSession authenticateWithCode:pin];
+            [self.imgSession setAuthenticationInputCode:pin];
+            
+            self.continueHandler();
         }
     }
     
@@ -89,7 +103,24 @@
     }
 }
 
--(void)imgurSessionNeedsExternalWebview:(NSURL*)url completion:(void(^)())completion
+- (void)restoreSession
+{
+    [self.imgSession authenticateWithRefreshToken:_refreshToken];
+}
+
+- (void)setRefreshToken:(NSString *)refreshToken
+{
+    _refreshToken = refreshToken;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
+        [ud setObject:refreshToken forKey:@"refreshToken"];
+        [ud synchronize];
+    });
+}
+
+- (void)imgurSessionNeedsExternalWebview:(NSURL*)url completion:(void(^)())completion
 {
     NSLog(@"url - %@", url);
     
@@ -99,7 +130,7 @@
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
--(void)imgurSessionAuthStateChanged:(IMGAuthState)state;
+- (void)imgurSessionAuthStateChanged:(IMGAuthState)state;
 {
     self.authButton.title = @"Log In";
     
@@ -111,21 +142,35 @@
         case IMGAuthStateAwaitingCodeInput:
             self.stateLabel.stringValue = @"Logging In";
             break;
+        case IMGAuthStateExpired:
+            [self restoreSession];
+            break;
         case IMGAuthStateBad:
         case IMGAuthStateNone:
         case IMGAuthStateAnon:
-        case IMGAuthStateExpired:
         default:
             self.stateLabel.stringValue = @"Not Authorized";
             break;
     }
     
-    self.authButton.enabled = (state != IMGAuthStateAwaitingCodeInput && state != IMGAuthStateNone);
+    self.authButton.enabled = (state == IMGAuthStateAuthenticated || state == IMGAuthStateAnon);
 }
 
--(void)imgurSessionUserRefreshed:(IMGAccount*)user
+- (void)imgurSessionUserRefreshed:(IMGAccount*)user
 {
     self.stateLabel.stringValue = user.username;
+    
+    [self imgurSessionAuthStateChanged:IMGAuthStateAuthenticated];
+}
+
+- (void)imgurSessionTokenRefreshed
+{
+    self.refreshToken = self.imgSession.refreshToken;
+}
+
+- (void)completeRequestReturningItems:(NSArray *)items completionHandler:(void(^)(BOOL expired))completionHandler
+{
+    NSLog(@"");
 }
 
 @end
