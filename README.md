@@ -1,2 +1,33 @@
 # imGuru
-Upload image to imgur via menu Share
+
+[![Platform](https://img.shields.io/badge/platform-OS%20X-lightgrey.svg?style=flat)](http://www.apple.com/osx/)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
+
+OS X Application.
+Upload image to imgur via context menu Share
+
+**How to Use:**
+* Login to imgur;
+* Select file;
+* Right-Click Menu -> Share -> imgur;
+* Send.
+
+Aditional Actions:
+-------------
+Link to Uploaded image will be available in clipboard.
+Just Comand+V to past it.
+
+Tutorial:
+-------------
+Find there [tutorial link][tutorial].
+
+Download
+-------------
+Also there [latest build][imGuru].
+
+Licence
+-------------
+This application is free open source software and licensed under the MIT.
+
+[tutorial]: http://www.youtube.com/watch?v=ZpNoiAbzLQ0 "tutorial link"
+[imGuru]: http://downloads.igrsoft.com/app/imGuru.zip "latest build"

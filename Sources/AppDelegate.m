@@ -56,14 +56,6 @@
 
 - (void)applicationDidBecomeActive:(NSNotification *)notification
 {
-    static BOOL skipOnStart = YES;
-    
-    if (skipOnStart && _refreshToken)
-    {
-        skipOnStart = NO;
-        return;
-    }
-    
     if (self.waitingAuth)
     {
         NSString *pin = [[NSPasteboard generalPasteboard] stringForType:NSStringPboardType];

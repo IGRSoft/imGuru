@@ -223,6 +223,7 @@
 		A5CB44F31AA794F70037C615 /* imGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imGuruTests.m; sourceTree = "<group>"; };
 		A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A5D57F001AA8F524002C181D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		A5D57F041AA8FF0F002C181D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +423,7 @@
 				A5CB44F01AA794F70037C615 /* imGuruTests */,
 				A53403F11AA8D90000631B2C /* imgur */,
 				A5CB44DB1AA794F70037C615 /* Products */,
+				A5D57F041AA8FF0F002C181D /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
