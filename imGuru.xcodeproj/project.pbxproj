@@ -90,6 +90,7 @@
 		A53404251AA8D9CB00631B2C /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F81AA7A1B400C93152 /* IMGMemeGen.m */; };
 		A53404261AA8D9CB00631B2C /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
+		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +222,7 @@
 		A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44F21AA794F70037C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5CB44F31AA794F70037C615 /* imGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imGuruTests.m; sourceTree = "<group>"; };
+		A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +398,7 @@
 				A53403F71AA8D90000631B2C /* ShareViewController.h */,
 				A53403F81AA8D90000631B2C /* ShareViewController.m */,
 				A53403FA1AA8D90000631B2C /* ShareViewController.xib */,
+				A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */,
 				A53403F21AA8D90000631B2C /* Supporting Files */,
 			);
 			path = imgur;

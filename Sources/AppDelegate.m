@@ -27,6 +27,8 @@
 
 @implementation AppDelegate
 
+#pragma mark - application
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
     self.waitingAuth = NO;
@@ -37,7 +39,7 @@
                                                       withDelegate:self];
     
     NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
-    _refreshToken = [ud objectForKey:@"refreshToken"];
+    _refreshToken = [ud objectForKey:kUDRefreshToken];
     if (_refreshToken)
     {
         [self restoreSession];
@@ -56,7 +58,7 @@
 {
     static BOOL skipOnStart = YES;
     
-    if (skipOnStart)
+    if (skipOnStart && _refreshToken)
     {
         skipOnStart = NO;
         return;
@@ -73,12 +75,30 @@
             [self.imgSession setAuthenticationInputCode:pin];
             
             self.continueHandler();
+            self.continueHandler = nil;
         }
     }
     
     [self.window makeKeyAndOrderFront:self];
     [self.window center];
 }
+
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
+{
+#pragma unused(sender)
+    
+    return NSTerminateNow;
+}
+
+// split when window is closed
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+#pragma unused(sender)
+    
+    return YES;
+}
+
+#pragma mark - Buttons Actions
 
 - (IBAction)authorizeTapped:(id)sender {
     
@@ -100,8 +120,17 @@
         
         self.imgSession = [IMGSession anonymousSessionWithClientID:ClientID
                                                       withDelegate:self];
+        
+        self.refreshToken = nil;
     }
 }
+
+- (IBAction)siteTapped:(id)sender {
+    
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://igrsoft.com"]];
+}
+
+#pragma mark - imgur Seeesion
 
 - (void)restoreSession
 {
@@ -115,10 +144,20 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         
         NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
-        [ud setObject:refreshToken forKey:@"refreshToken"];
+        
+        if (refreshToken)
+        {
+            [ud setObject:refreshToken forKey:kUDRefreshToken];
+        }
+        else
+        {
+            [ud removeObjectForKey:kUDRefreshToken];
+        }
         [ud synchronize];
     });
 }
+
+#pragma mark - IMGSessionDelegate
 
 - (void)imgurSessionNeedsExternalWebview:(NSURL*)url completion:(void(^)())completion
 {
@@ -126,7 +165,6 @@
     
     self.continueHandler = [completion copy];
     
-    //go to safari to login, configure your imgur app to redirect to this app using URL scheme.
     [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
@@ -166,11 +204,6 @@
 - (void)imgurSessionTokenRefreshed
 {
     self.refreshToken = self.imgSession.refreshToken;
-}
-
-- (void)completeRequestReturningItems:(NSArray *)items completionHandler:(void(^)(BOOL expired))completionHandler
-{
-    NSLog(@"");
 }
 
 @end

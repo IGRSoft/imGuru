@@ -9,6 +9,7 @@
 #import "ShareViewController.h"
 #import "Constants.h"
 #import "ImgurSession.h"
+@import AudioToolbox;
 
 @interface ShareViewController () <IMGSessionDelegate>
 
@@ -44,7 +45,7 @@
     }
     
     NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
-    NSString *refreshToken = [ud objectForKey:@"refreshToken"];
+    NSString *refreshToken = [ud objectForKey:kUDRefreshToken];
     if (refreshToken)
     {
         self.imgSession = [IMGSession authenticatedSessionWithClientID:ClientID
@@ -59,17 +60,31 @@
 }
 
 - (IBAction)send:(id)sender {
-    NSExtensionItem *outputItem = [[NSExtensionItem alloc] init];
-    outputItem.attachments = @[self.imageView.image];
-    // Complete implementation by setting the appropriate value on the output item
+   
+    [IMGImageRequest uploadImageWithFileURL:self.fileURL
+                                      title:[self.fileURL lastPathComponent] description:@""
+                          linkToAlbumWithID:nil
+                                    success:^(IMGImage *image) {
+                                        
+                                        NSLog(@"Image Upload file: %@", image.url);
+                                        [self playSystemSound:@"Glass"];
+                                        
+                                        NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+                                        [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
+                                        [pasteBoard setString:[image.url absoluteString] forType:NSStringPboardType];
+                                        
+                                    } progress:nil
+                                    failure:^(NSError *error) {
+                                        
+                                        NSLog(@"Can't Upload file: %@", error.localizedDescription);
+                                    }];
     
-    NSArray *outputItems = @[outputItem];
-    
-    [self.extensionContext completeRequestReturningItems:outputItems completionHandler:nil];
+    [self.extensionContext completeRequestReturningItems:@[] completionHandler:nil];
 }
 
 - (IBAction)cancel:(id)sender {
     NSError *cancelError = [NSError errorWithDomain:NSCocoaErrorDomain code:NSUserCancelledError userInfo:nil];
+    
     [self.extensionContext cancelRequestWithError:cancelError];
 }
 
@@ -77,5 +92,19 @@
 {
 }
 
+- (void)playSystemSound:(NSString*)name
+{
+    NSString* soundFile = [[NSString alloc] initWithFormat:@"/System/Library/Sounds/%@.aiff", name];
+    
+    NSFileManager *fm = [NSFileManager defaultManager];
+    
+    if ([ fm fileExistsAtPath:soundFile] == YES)
+    {
+        NSURL* filePath = [NSURL fileURLWithPath:soundFile isDirectory: NO];
+        SystemSoundID soundID;
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)filePath, &soundID);
+        AudioServicesPlaySystemSound(soundID);
+    }
+}
 @end
 
