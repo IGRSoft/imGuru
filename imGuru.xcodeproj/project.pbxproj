@@ -91,6 +91,8 @@
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
 		A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
+		A5D57F0A1AA99BC0002C181D /* IGRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */; };
+		A5D57F0B1AA99BC5002C181D /* IGRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +226,8 @@
 		A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A5D57F001AA8F524002C181D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		A5D57F041AA8FF0F002C181D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A5D57F081AA99BC0002C181D /* IGRUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRUserDefaults.h; sourceTree = "<group>"; };
+		A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRUserDefaults.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,8 @@
 				A50911161AA795DE00C93152 /* AppDelegate.m */,
 				A50911171AA795DE00C93152 /* main.m */,
 				A53403B21AA8CF4400631B2C /* Constants.h */,
+				A5D57F081AA99BC0002C181D /* IGRUserDefaults.h */,
+				A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -616,6 +622,7 @@
 				A534041A1AA8D9CB00631B2C /* IMGNotification.m in Sources */,
 				A53404171AA8D9CB00631B2C /* IMGMeme.m in Sources */,
 				A53404111AA8D9CB00631B2C /* IMGComment.m in Sources */,
+				A5D57F0B1AA99BC5002C181D /* IGRUserDefaults.m in Sources */,
 				A534040E1AA8D9CB00631B2C /* IMGAccountSettings.m in Sources */,
 				A534040F1AA8D9CB00631B2C /* IMGAlbum.m in Sources */,
 				A53404131AA8D9CB00631B2C /* IMGGalleryAlbum.m in Sources */,
@@ -675,6 +682,7 @@
 				A50912C11AA7A1B400C93152 /* IMGBasicAlbum.m in Sources */,
 				A50912C61AA7A1B400C93152 /* IMGGalleryProfile.m in Sources */,
 				A50912CC1AA7A1B400C93152 /* IMGVote.m in Sources */,
+				A5D57F0A1AA99BC0002C181D /* IGRUserDefaults.m in Sources */,
 				A50912D51AA7A1B400C93152 /* IMGImageRequest.m in Sources */,
 				A50912691AA7A1B400C93152 /* AFNetworkReachabilityManager.m in Sources */,
 				A50913571AA7AB4A00C93152 /* AFURLResponseSerialization.m in Sources */,

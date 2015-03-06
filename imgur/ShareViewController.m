@@ -9,6 +9,7 @@
 #import "ShareViewController.h"
 #import "Constants.h"
 #import "ImgurSession.h"
+#import "IGRUserDefaults.h"
 @import AudioToolbox;
 
 @interface ShareViewController () <IMGSessionDelegate>
@@ -20,6 +21,8 @@
 @property (weak) IBOutlet NSButton *actionButton;
 @property (weak) IBOutlet NSTextField *warningLabel;
 @property (weak) IBOutlet NSTextField *titleField;
+
+@property (nonatomic) IGRUserDefaults *userSettings;
 
 @end
 
@@ -53,19 +56,18 @@
         }];
     }
     
-    NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
-    NSString *refreshToken = [ud objectForKey:kUDRefreshToken];
-    if (refreshToken)
+    self.userSettings = [[IGRUserDefaults alloc] init];
+    if (self.userSettings.sRefreshToken)
     {
         self.imgSession = [IMGSession authenticatedSessionWithClientID:ClientID
                                                                 secret:ClientSecret
                                                               authType:IMGPinAuth
                                                           withDelegate:self];
-        [self.imgSession authenticateWithRefreshToken:refreshToken];
+        [self.imgSession authenticateWithRefreshToken:self.userSettings.sRefreshToken];
     }
     
-    self.actionButton.enabled = (refreshToken != nil);
-    self.titleField.hidden = (refreshToken == nil);
+    self.actionButton.enabled = (self.userSettings.sRefreshToken != nil);
+    self.titleField.hidden = (self.userSettings.sRefreshToken == nil);
     
 }
 
@@ -80,9 +82,12 @@
                                         NSLog(@"Image Upload file: %@", image.url);
                                         [self playSystemSound:@"Glass"];
                                         
-                                        NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-                                        [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
-                                        [pasteBoard setString:[image.url absoluteString] forType:NSStringPboardType];
+                                        if (self.userSettings.bCopyLink)
+                                        {
+                                            NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+                                            [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
+                                            [pasteBoard setString:[image.url absoluteString] forType:NSStringPboardType];
+                                        }
                                         
                                     } progress:nil
                                     failure:^(NSError *error) {

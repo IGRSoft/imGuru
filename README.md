@@ -6,6 +6,8 @@
 OS X Application.
 Upload image to imgur via context menu Share
 
+<img src="https://github.com/IGRSoft/imGuru/blob/master/Resources/screenshot.png?raw=true">
+
 **How to Use:**
 * Login to imgur;
 * Select file;

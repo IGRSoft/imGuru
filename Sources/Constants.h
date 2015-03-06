@@ -11,7 +11,5 @@
 
 #define ClientID @"bc5111e191dfa20"
 #define ClientSecret @"a76a2be0cf75660e2dade7a86a6b2371c4cb9e95"
-#define SharedID @"com.igrsoft.imGuru.shared"
-#define kUDRefreshToken @"refreshToken"
 
 #endif

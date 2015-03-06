@@ -9,17 +9,20 @@
 #import "AppDelegate.h"
 #import "ImgurSession.h"
 #import "Constants.h"
+#import "IGRUserDefaults.h"
 
 @interface AppDelegate () <IMGSessionDelegate>
 
-@property (weak) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSButton *authButton;
+@property (weak) IBOutlet NSWindow    *window;
+@property (weak) IBOutlet NSButton    *authButton;
 @property (weak) IBOutlet NSTextField *stateLabel;
 
-@property (strong) IMGSession *imgSession;
-@property (copy) void(^continueHandler)();
-@property (assign) BOOL waitingAuth;
-@property (nonatomic, copy) NSString *refreshToken;
+@property (nonatomic) IGRUserDefaults *userSettings;
+
+@property (strong         ) IMGSession      *imgSession;
+@property (copy           ) void(^continueHandler)();
+@property (assign         ) BOOL            waitingAuth;
+@property (nonatomic, copy) NSString        *refreshToken;
 
 - (IBAction)authorizeTapped:(id)sender;
 
@@ -28,6 +31,16 @@
 @implementation AppDelegate
 
 #pragma mark - application
+
+- (instancetype) init
+{
+    if (self= [super init])
+    {
+        self.userSettings = [[IGRUserDefaults alloc] init];
+    }
+    
+    return self;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
@@ -38,8 +51,7 @@
                                                           authType:IMGPinAuth
                                                       withDelegate:self];
     
-    NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
-    _refreshToken = [ud objectForKey:kUDRefreshToken];
+    _refreshToken = self.userSettings.sRefreshToken;
     if (_refreshToken)
     {
         [self restoreSession];
@@ -122,6 +134,11 @@
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://igrsoft.com"]];
 }
 
+- (IBAction)saveSettings:(id)sender {
+    
+    [self.userSettings saveUserSettings];
+}
+
 #pragma mark - imgur Seeesion
 
 - (void)restoreSession
@@ -131,22 +148,9 @@
 
 - (void)setRefreshToken:(NSString *)refreshToken
 {
-    _refreshToken = refreshToken;
+    self.userSettings.sRefreshToken = _refreshToken = refreshToken;
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        NSUserDefaults *ud = [[NSUserDefaults alloc] initWithSuiteName:SharedID];
-        
-        if (refreshToken)
-        {
-            [ud setObject:refreshToken forKey:kUDRefreshToken];
-        }
-        else
-        {
-            [ud removeObjectForKey:kUDRefreshToken];
-        }
-        [ud synchronize];
-    });
+    [self saveSettings:self];
 }
 
 #pragma mark - IMGSessionDelegate
