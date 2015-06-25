@@ -34,7 +34,7 @@ NSString *kUDRefreshToken   = @"refreshToken";
 {
     if (self = [super init])
     {
-        NSString *bundleIdentifier = @"com.igrsoft.imGuru.shared";
+        NSString *bundleIdentifier = @"DMP42GVPJ3.imGuru.shared";
         
         self.defaults = [[NSUserDefaults alloc] initWithSuiteName:bundleIdentifier];
         [self initialize];

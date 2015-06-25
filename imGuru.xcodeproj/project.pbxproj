@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A50911181AA795DE00C93152 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50911101AA795DE00C93152 /* MainMenu.xib */; };
 		A50911191AA795DE00C93152 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
 		A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911161AA795DE00C93152 /* AppDelegate.m */; };
 		A509111C1AA795DE00C93152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911171AA795DE00C93152 /* main.m */; };
@@ -88,6 +87,7 @@
 		A53404241AA8D9CB00631B2C /* IMGImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F61AA7A1B400C93152 /* IMGImageRequest.m */; };
 		A53404251AA8D9CB00631B2C /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F81AA7A1B400C93152 /* IMGMemeGen.m */; };
 		A53404261AA8D9CB00631B2C /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
+		A547EBFC1B3C202800F72EC8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50911101AA795DE00C93152 /* MainMenu.xib */; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
 		A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
@@ -236,13 +236,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5CB44D71AA794F70037C615 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,7 +478,6 @@
 			buildConfigurationList = A5CB44F71AA794F70037C615 /* Build configuration list for PBXNativeTarget "imGuru" */;
 			buildPhases = (
 				A5CB44D61AA794F70037C615 /* Sources */,
-				A5CB44D71AA794F70037C615 /* Frameworks */,
 				A5CB44D81AA794F70037C615 /* Resources */,
 				A509138C1AA85CE200C93152 /* Embed App Extensions */,
 			);
@@ -590,8 +582,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A547EBFC1B3C202800F72EC8 /* MainMenu.xib in Resources */,
 				A50911191AA795DE00C93152 /* Images.xcassets in Resources */,
-				A50911181AA795DE00C93152 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
