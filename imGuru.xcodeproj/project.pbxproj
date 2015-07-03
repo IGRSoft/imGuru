@@ -49,7 +49,6 @@
 		A50913571AA7AB4A00C93152 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */; };
 		A53403F91AA8D90000631B2C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53403F81AA8D90000631B2C /* ShareViewController.m */; };
 		A53403FB1AA8D90000631B2C /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53403FA1AA8D90000631B2C /* ShareViewController.xib */; };
-		A53403FE1AA8D90000631B2C /* imgur.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A53403F01AA8D90000631B2C /* imgur.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A53404021AA8D9CB00631B2C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */; };
 		A53404031AA8D9CB00631B2C /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911281AA7A1B400C93152 /* AFHTTPRequestOperation.m */; };
 		A53404041AA8D9CB00631B2C /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A509112A1AA7A1B400C93152 /* AFHTTPRequestOperationManager.m */; };
@@ -88,6 +87,7 @@
 		A53404251AA8D9CB00631B2C /* IMGMemeGen.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911F81AA7A1B400C93152 /* IMGMemeGen.m */; };
 		A53404261AA8D9CB00631B2C /* IMGNotificationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911FA1AA7A1B400C93152 /* IMGNotificationRequest.m */; };
 		A547EBFC1B3C202800F72EC8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50911101AA795DE00C93152 /* MainMenu.xib */; };
+		A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A53403F01AA8D90000631B2C /* imGuruPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
 		A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
@@ -119,7 +119,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A53403FE1AA8D90000631B2C /* imgur.appex in Embed App Extensions */,
+				A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +213,7 @@
 		A50913551AA7AB4A00C93152 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
 		A50913561AA7AB4A00C93152 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		A53403B21AA8CF4400631B2C /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		A53403F01AA8D90000631B2C /* imgur.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = imgur.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A53403F01AA8D90000631B2C /* imGuruPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = imGuruPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53403F31AA8D90000631B2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A53403F61AA8D90000631B2C /* imgur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = imgur.entitlements; sourceTree = "<group>"; };
 		A53403F71AA8D90000631B2C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
@@ -431,7 +431,7 @@
 			children = (
 				A5CB44DA1AA794F70037C615 /* imGuru.app */,
 				A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */,
-				A53403F01AA8D90000631B2C /* imgur.appex */,
+				A53403F01AA8D90000631B2C /* imGuruPlugin.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -456,9 +456,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A53403EF1AA8D90000631B2C /* imgur */ = {
+		A53403EF1AA8D90000631B2C /* imGuruPlugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A53403FF1AA8D90000631B2C /* Build configuration list for PBXNativeTarget "imgur" */;
+			buildConfigurationList = A53403FF1AA8D90000631B2C /* Build configuration list for PBXNativeTarget "imGuruPlugin" */;
 			buildPhases = (
 				A53403EC1AA8D90000631B2C /* Sources */,
 				A53403ED1AA8D90000631B2C /* Frameworks */,
@@ -468,9 +468,9 @@
 			);
 			dependencies = (
 			);
-			name = imgur;
-			productName = imgur;
-			productReference = A53403F01AA8D90000631B2C /* imgur.appex */;
+			name = imGuruPlugin;
+			productName = imGuruPlugin;
+			productReference = A53403F01AA8D90000631B2C /* imGuruPlugin.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		A5CB44D91AA794F70037C615 /* imGuru */ = {
@@ -563,7 +563,7 @@
 			targets = (
 				A5CB44D91AA794F70037C615 /* imGuru */,
 				A5CB44EC1AA794F70037C615 /* imGuruTests */,
-				A53403EF1AA8D90000631B2C /* imgur */,
+				A53403EF1AA8D90000631B2C /* imGuruPlugin */,
 			);
 		};
 /* End PBXProject section */
@@ -703,7 +703,7 @@
 /* Begin PBXTargetDependency section */
 		A53403FD1AA8D90000631B2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A53403EF1AA8D90000631B2C /* imgur */;
+			target = A53403EF1AA8D90000631B2C /* imGuruPlugin */;
 			targetProxy = A53403FC1AA8D90000631B2C /* PBXContainerItemProxy */;
 		};
 		A5CB44EF1AA794F70037C615 /* PBXTargetDependency */ = {
@@ -929,7 +929,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A53403FF1AA8D90000631B2C /* Build configuration list for PBXNativeTarget "imgur" */ = {
+		A53403FF1AA8D90000631B2C /* Build configuration list for PBXNativeTarget "imGuruPlugin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A53404001AA8D90000631B2C /* Debug */,

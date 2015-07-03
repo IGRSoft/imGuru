@@ -6,8 +6,6 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIconFile</key>
-	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>com.igrsoft.$(PRODUCT_NAME:rfc1034identifier)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -21,7 +19,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>101</string>
+	<string>103</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.social-networking</string>
 	<key>LSMinimumSystemVersion</key>
