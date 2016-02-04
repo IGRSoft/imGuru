@@ -1,6 +1,6 @@
 [submodule "Submodules/ImgurSession"]
 	path = Submodules/ImgurSession
-	url = https://github.com/geoffmacd/ImgurSession.git
+	url = https://github.com/IGRSoft/ImgurSession.git
 [submodule "Submodules/AFNetworking"]
 	path = Submodules/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking.git
