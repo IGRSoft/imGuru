@@ -17,7 +17,7 @@ Upload image to [imgur site][imgur] via context menu Share
 Aditional Actions:
 -------------
 Link to Uploaded image will be available in clipboard.
-Just Comand+V to past it.
+Just Comand+V to paste it.
 
 Tutorial:
 -------------
