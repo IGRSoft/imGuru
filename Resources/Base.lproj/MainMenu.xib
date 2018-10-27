@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14313.18"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -670,14 +672,15 @@
         </menu>
         <window title="imGuru - Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <rect key="contentRect" x="335" y="390" width="316" height="162"/>
+            <rect key="contentRect" x="335" y="390" width="316" height="199"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="316" height="162"/>
+                <rect key="frame" x="0.0" y="0.0" width="316" height="199"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-yU-MV0">
-                        <rect key="frame" x="14" y="114" width="99" height="32"/>
+                    <button focusRingType="none" verticalHuggingPriority="750" id="qbs-yU-MV0">
+                        <rect key="frame" x="14" y="151" width="99" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Authorize" bezelStyle="rounded" alignment="center" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="W0n-od-eCv">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -686,40 +689,30 @@
                             <action selector="authorizeTapped:" target="Voe-Tx-rLC" id="uMq-WP-Wuv"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWK-Sh-2N4">
-                        <rect key="frame" x="115" y="122" width="183" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="cWK-Sh-2N4">
+                        <rect key="frame" x="115" y="159" width="183" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Not Authorized" id="ZW5-ao-BXf">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="wIB-s6-9QH">
-                        <rect key="frame" x="21" y="103" width="275" height="5"/>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <font key="titleFont" metaFont="system"/>
+                    <box verticalHuggingPriority="750" boxType="separator" id="wIB-s6-9QH">
+                        <rect key="frame" x="21" y="140" width="275" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </box>
-                    <box horizontalHuggingPriority="248" verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="8jr-M5-LEA">
-                        <rect key="frame" x="288" y="64" width="4" height="1"/>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <font key="titleFont" metaFont="system"/>
+                    <box horizontalHuggingPriority="248" verticalHuggingPriority="750" boxType="separator" id="8jr-M5-LEA">
+                        <rect key="frame" x="288" y="100" width="4" height="4"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </box>
-                    <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="6mF-1S-8ll">
-                        <rect key="frame" x="20" y="71" width="275" height="5"/>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <font key="titleFont" metaFont="system"/>
+                    <box verticalHuggingPriority="750" boxType="separator" id="iOv-gf-WkI">
+                        <rect key="frame" x="21" y="48" width="275" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </box>
-                    <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="iOv-gf-WkI">
-                        <rect key="frame" x="21" y="39" width="275" height="5"/>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <font key="titleFont" metaFont="system"/>
-                    </box>
-                    <button focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TNh-4Q-heU">
-                        <rect key="frame" x="110" y="10" width="95" height="19"/>
+                    <button focusRingType="none" verticalHuggingPriority="750" id="TNh-4Q-heU">
+                        <rect key="frame" x="110" y="19" width="95" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="recessed" title="IGR Software" bezelStyle="recessed" alignment="center" state="on" borderStyle="border" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="jwE-tw-Jyb">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
                             <font key="font" metaFont="systemBold" size="12"/>
@@ -728,8 +721,9 @@
                             <action selector="siteTapped:" target="Voe-Tx-rLC" id="faE-RO-HI7"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4wk-b5-v3h">
-                        <rect key="frame" x="19" y="81" width="160" height="18"/>
+                    <button id="4wk-b5-v3h">
+                        <rect key="frame" x="19" y="118" width="160" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Copy link to Clipboard" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Pjz-ox-pOM">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                             <font key="font" metaFont="system"/>
@@ -739,17 +733,34 @@
                             <binding destination="Voe-Tx-rLC" name="value" keyPath="self.userSettings.bCopyLink" id="a0v-Oz-IEC"/>
                         </connections>
                     </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="249" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-zI-h34">
-                        <rect key="frame" x="19" y="50" width="280" height="17.5"/>
+                    <button id="wjm-6P-4AV">
+                        <rect key="frame" x="19" y="93" width="160" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Play Sound on Finish" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="X63-9q-CqU">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="saveSettings:" target="Voe-Tx-rLC" id="O8x-dq-xEw"/>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.userSettings.bUseSound" id="GCd-4I-fSR"/>
+                        </connections>
+                    </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="249" id="2aZ-zI-h34">
+                        <rect key="frame" x="19" y="59" width="280" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Context Menu -&gt; Share -&gt; imgur" id="aT2-qM-iHo">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <box verticalHuggingPriority="750" boxType="separator" id="6mF-1S-8ll">
+                        <rect key="frame" x="21" y="83" width="275" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </box>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="321" y="281"/>
+            <point key="canvasLocation" x="321" y="299.5"/>
         </window>
     </objects>
 </document>

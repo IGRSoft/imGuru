@@ -11,6 +11,7 @@
 @interface IGRUserDefaults : NSObject
 
 @property (nonatomic, assign) BOOL bCopyLink;
+@property (nonatomic, assign) BOOL bUseSound;
 @property (nonatomic, strong) NSString *sRefreshToken;
 
 - (void)loadUserSettings;

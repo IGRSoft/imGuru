@@ -9,6 +9,7 @@
 #import "IGRUserDefaults.h"
 
 NSString *kUDCopyLink       = @"CopyLink";
+NSString *kUDUseSound       = @"UseSound";
 NSString *kUDRefreshToken   = @"refreshToken";
 
 @interface IGRUserDefaults ()
@@ -19,21 +20,19 @@ NSString *kUDRefreshToken   = @"refreshToken";
 
 @implementation IGRUserDefaults
 
-- (void)initialize
-{
+- (void)initialize {
     // Create a dictionary
     NSMutableDictionary *defaultValues = [NSMutableDictionary dictionary];
     defaultValues[kUDCopyLink] = @YES;
+    defaultValues[kUDUseSound] = @YES;
     
     // Register the dictionary of defaults
     [self.defaults registerDefaults: defaultValues];
     //DBNSLog(@"registered defaults: %@", defaultValues);
 }
 
-- (instancetype)init
-{
-    if (self = [super init])
-    {
+- (instancetype)init {
+    if (self = [super init]) {
         NSString *bundleIdentifier = @"DMP42GVPJ3.imGuru.shared";
         
         self.defaults = [[NSUserDefaults alloc] initWithSuiteName:bundleIdentifier];
@@ -44,22 +43,20 @@ NSString *kUDRefreshToken   = @"refreshToken";
     return self;
 }
 
-- (void)loadUserSettings
-{
+- (void)loadUserSettings {
     _sRefreshToken = [self.defaults objectForKey:kUDRefreshToken];
     _bCopyLink     = [self.defaults boolForKey:kUDCopyLink];
+    _bUseSound     = [self.defaults boolForKey:kUDUseSound];
 }
 
-- (void)saveUserSettings
-{
+- (void)saveUserSettings {
     [self.defaults setBool:_bCopyLink forKey:kUDCopyLink];
+    [self.defaults setBool:_bUseSound forKey:kUDUseSound];
     
-    if (_sRefreshToken)
-    {
+    if (_sRefreshToken) {
         [self.defaults setObject:_sRefreshToken forKey:kUDRefreshToken];
     }
-    else
-    {
+    else {
         [self.defaults removeObjectForKey:kUDRefreshToken];
     }
     
