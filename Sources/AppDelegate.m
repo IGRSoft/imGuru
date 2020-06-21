@@ -50,6 +50,7 @@
     
     _refreshToken = self.userSettings.sRefreshToken;
     if (_refreshToken.length) {
+        self.waitingAuth = YES;
         [self restoreSession];
     }
     else {

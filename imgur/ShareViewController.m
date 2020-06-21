@@ -81,29 +81,30 @@
 - (IBAction)send:(id)sender {
     [IMGImageRequest uploadImageWithData:[self.imageView.image TIFFRepresentation]
                                    title:self.titleField.stringValue
+                                progress:nil
                                  success:^(IMGImage *image) {
-                                     NSLog(@"Image Upload file: %@", image.url);
-                                     [self playSystemSound:@"Glass"];
-                                     
-                                     if (self.userSettings.bCopyLink)
-                                     {
-                                         NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-                                         [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
-                                         [pasteBoard setString:[image.url absoluteString] forType:NSStringPboardType];
-                                     }
-                                     
-                                     NSUInteger options = NSNotificationDeliverImmediately | NSNotificationPostToAllSessions;
-                                     NSDistributedNotificationCenter *distCenter = [NSDistributedNotificationCenter defaultCenter];
-                                     
-                                     [distCenter postNotificationName:IGRNotificationImageUrlKey
-                                                               object:[image.url absoluteString]
-                                                             userInfo:nil
-                                                              options:options];
-                                 } progress:nil failure:^(NSError *error) {
-                                     NSLog(@"Can't Upload file: %@", error.localizedDescription);
-                                     
-                                     [self playSystemSound:@"Basso"];
-                                 }];
+        NSLog(@"Image Upload file: %@", image.url);
+        [self playSystemSound:@"Glass"];
+        
+        if (self.userSettings.bCopyLink)
+        {
+            NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
+            [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
+            [pasteBoard setString:[image.url absoluteString] forType:NSStringPboardType];
+        }
+        
+        NSUInteger options = NSNotificationDeliverImmediately | NSNotificationPostToAllSessions;
+        NSDistributedNotificationCenter *distCenter = [NSDistributedNotificationCenter defaultCenter];
+        
+        [distCenter postNotificationName:IGRNotificationImageUrlKey
+                                  object:[image.url absoluteString]
+                                userInfo:nil
+                                 options:options];
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Can't Upload file: %@", error.localizedDescription);
+        
+        [self playSystemSound:@"Basso"];
+    }];
     
     [self.extensionContext completeRequestReturningItems:@[] completionHandler:nil];
 }
