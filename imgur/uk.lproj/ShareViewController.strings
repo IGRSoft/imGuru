@@ -1,0 +1,15 @@
+
+/* Class = "NSTextFieldCell"; title = "Upload image to imgur"; ObjectID = "0xp-rC-2gr"; */
+"0xp-rC-2gr.title" = "Завантажте зображення на imgur";
+
+/* Class = "NSButtonCell"; title = "Send"; ObjectID = "2l4-PO-we5"; */
+"2l4-PO-we5.title" = "Надіслати";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "6Up-t3-mwm"; */
+"6Up-t3-mwm.title" = "Скасувати";
+
+/* Class = "NSTextFieldCell"; title = "Please login to imgur via imGuru"; ObjectID = "d8Y-it-lh5"; */
+"d8Y-it-lh5.title" = "Будь ласка, увійдіть до imgur через imGuru";
+
+/* Class = "NSTextFieldCell"; placeholderString = "Title"; ObjectID = "lhQ-YT-ho5"; */
+"lhQ-YT-ho5.placeholderString" = "Назва";

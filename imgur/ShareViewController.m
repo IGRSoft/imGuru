@@ -35,7 +35,7 @@
 - (void)loadView {
     [super loadView];
     
-    self.warningLabel.stringValue = @"Anonymous upload doesn't support";
+    self.warningLabel.stringValue = NSLocalizedString(@"AnonymousBlock", @"");
     
     // Insert code here to customize the view
     NSExtensionItem *item = self.extensionContext.inputItems.firstObject;
@@ -123,7 +123,7 @@
     __weak typeof(self) weak = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        weak.warningLabel.stringValue = [NSString stringWithFormat:@"User Name: %@", user.username];
+        weak.warningLabel.stringValue = [NSString stringWithFormat:NSLocalizedString(@"UserName", @""), user.username];
     });
 }
 

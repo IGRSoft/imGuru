@@ -154,7 +154,7 @@
 }
 
 - (void)imgurSessionAuthStateChanged:(IMGAuthState)state {
-    self.authButton.title = @"Log In";
+    self.authButton.title = NSLocalizedString(@"LogIn", @"");
     self.authButton.image = nil;
     self.authButton.bordered = YES;
     self.stateLabel.hidden = false;
@@ -163,7 +163,7 @@
     
     switch (state) {
         case IMGAuthStateAuthenticated:
-            self.authButton.title = @"Log Out";
+            self.authButton.title = NSLocalizedString(@"LogOut", @"");
             break;
         case IMGAuthStateAwaitingCodeInput:
             self.authButton.title = @"";
@@ -180,7 +180,7 @@
         case IMGAuthStateNone:
         case IMGAuthStateAnon:
         default:
-            self.stateLabel.stringValue = @"Not Authorized";
+            self.stateLabel.stringValue = NSLocalizedString(@"NotAuthorized", @"");
             break;
     }
 }
@@ -205,7 +205,7 @@
 #pragma mark - NSDistributedNotificationCenter
 - (void)imageUrlReceived:(NSNotification *)aNotification {
     NSUserNotification *notification = [[NSUserNotification alloc] init];
-    notification.title = @"Image Url";
+    notification.title = NSLocalizedString(@"ImageUrl", @"");
     notification.informativeText = aNotification.object;
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];

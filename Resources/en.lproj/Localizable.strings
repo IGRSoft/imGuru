@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  imGuru
+
+  Created by Vitalii Parovishnyk on 02.07.2022.
+  Copyright © 2022 IGR Software. All rights reserved.
+*/
+
+/* No Comments*/
+"LogIn" = "Log In";
+
+/* No Comments*/
+"LogOut" = "Log Out";
+
+/* No Comments*/
+"NotAuthorized" = "Not Authorized";
+
+/* No Comments*/
+"Image Url" = "Image Url";

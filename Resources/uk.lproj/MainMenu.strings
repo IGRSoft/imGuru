@@ -1,24 +1,24 @@
 
 /* Class = "NSButtonCell"; title = "Copy link to Clipboard"; ObjectID = "Pjz-ox-pOM"; */
-"Pjz-ox-pOM.title" = "Копировать ссылку в буфер обмена";
+"Pjz-ox-pOM.title" = "Копіювати посилання в буфер обміну";
 
 /* Class = "NSWindow"; title = "imGuru - Preferences"; ObjectID = "QvC-M9-y7g"; */
-"QvC-M9-y7g.title" = "imGuru - Настройки";
+"QvC-M9-y7g.title" = "imGuru - Налаштування";
 
 /* Class = "NSButtonCell"; title = "connect"; ObjectID = "RXE-qT-54J"; */
-"RXE-qT-54J.title" = "Соеденить";
+"RXE-qT-54J.title" = "З'єднати";
 
 /* Class = "NSButtonCell"; title = "Authorize"; ObjectID = "W0n-od-eCv"; */
-"W0n-od-eCv.title" = "Авторизовать";
+"W0n-od-eCv.title" = "Авторизувати";
 
 /* Class = "NSButtonCell"; title = "Play Sound on Finish"; ObjectID = "X63-9q-CqU"; */
-"X63-9q-CqU.title" = "Воспроизвести звук по завершению";
+"X63-9q-CqU.title" = "Відтворити звук після завершення";
 
 /* Class = "NSTextFieldCell"; title = "Not Authorized"; ObjectID = "ZW5-ao-BXf"; */
-"ZW5-ao-BXf.title" = "Не авторизован";
+"ZW5-ao-BXf.title" = "Не авторизовано";
 
 /* Class = "NSTextFieldCell"; title = "Context Menu -> Share -> imgur"; ObjectID = "aT2-qM-iHo"; */
-"aT2-qM-iHo.title" = "Контекстное меню -> Поделиться -> imgur";
+"aT2-qM-iHo.title" = "Контекстне меню -> Поширити -> imgur";
 
 /* Class = "NSButtonCell"; title = "IGR Software"; ObjectID = "jwE-tw-Jyb"; */
 "jwE-tw-Jyb.title" = "IGR Software";

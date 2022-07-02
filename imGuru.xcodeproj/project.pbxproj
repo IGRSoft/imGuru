@@ -12,14 +12,16 @@
 		A509111B1AA795DE00C93152 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911161AA795DE00C93152 /* AppDelegate.m */; };
 		A509111C1AA795DE00C93152 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A50911171AA795DE00C93152 /* main.m */; };
 		A53403F91AA8D90000631B2C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53403F81AA8D90000631B2C /* ShareViewController.m */; };
-		A53403FB1AA8D90000631B2C /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53403FA1AA8D90000631B2C /* ShareViewController.xib */; };
-		A547EBFC1B3C202800F72EC8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A50911101AA795DE00C93152 /* MainMenu.xib */; };
+		A563F16028705F490066F03F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A563F16228705F490066F03F /* MainMenu.xib */; };
+		A563F168287060720066F03F /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A563F16A287060720066F03F /* ShareViewController.xib */; };
 		A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A53403F01AA8D90000631B2C /* imGuruPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
 		A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
 		A5D57F0A1AA99BC0002C181D /* IGRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */; };
 		A5D57F0B1AA99BC5002C181D /* IGRUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */; };
+		A5E0FC702870638E00DD9868 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5E0FC722870638E00DD9868 /* Localizable.strings */; };
+		A5E0FC77287067D600DD9868 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5E0FC79287067D600DD9868 /* Localizable.strings */; };
 		E60C41508C9723A2E6A45D98 /* Pods_imGuruPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D3E22C3BD5CDC34033D435 /* Pods_imGuruPlugin.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,7 +60,6 @@
 		7C5B90995F177F196718DDB9 /* Pods-imGuru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imGuru.release.xcconfig"; path = "Pods/Target Support Files/Pods-imGuru/Pods-imGuru.release.xcconfig"; sourceTree = "<group>"; };
 		81A82259C5031F69A9CD2397 /* Pods-imGuruPlugin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imGuruPlugin.release.xcconfig"; path = "Pods/Target Support Files/Pods-imGuruPlugin/Pods-imGuruPlugin.release.xcconfig"; sourceTree = "<group>"; };
 		9F3B600DF51888892271B6F9 /* Pods_imGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A50911111AA795DE00C93152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A50911121AA795DE00C93152 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A50911131AA795DE00C93152 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50911151AA795DE00C93152 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,16 +72,28 @@
 		A53403F61AA8D90000631B2C /* imgur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = imgur.entitlements; sourceTree = "<group>"; };
 		A53403F71AA8D90000631B2C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
 		A53403F81AA8D90000631B2C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
-		A53403FA1AA8D90000631B2C /* ShareViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShareViewController.xib; sourceTree = "<group>"; };
+		A563F16128705F490066F03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A563F16428705F4E0066F03F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		A563F16628705F500066F03F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		A563F16728705F630066F03F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		A563F169287060720066F03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
+		A563F16C287060750066F03F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareViewController.strings; sourceTree = "<group>"; };
+		A563F16E287060750066F03F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ShareViewController.strings; sourceTree = "<group>"; };
+		A563F170287060760066F03F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/ShareViewController.strings; sourceTree = "<group>"; };
 		A5CB44DA1AA794F70037C615 /* imGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44F21AA794F70037C615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5CB44F31AA794F70037C615 /* imGuruTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imGuruTests.m; sourceTree = "<group>"; };
 		A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A5D57F001AA8F524002C181D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		A5D57F041AA8FF0F002C181D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A5D57F081AA99BC0002C181D /* IGRUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRUserDefaults.h; sourceTree = "<group>"; };
 		A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRUserDefaults.m; sourceTree = "<group>"; };
+		A5E0FC712870638E00DD9868 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5E0FC732870639000DD9868 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5E0FC742870639100DD9868 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5E0FC78287067D600DD9868 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5E0FC7A287067D800DD9868 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A5E0FC7B287067D900DD9868 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B24F99BF7AD41D2E3DE76B73 /* Pods-imGuru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imGuru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imGuru/Pods-imGuru.debug.xcconfig"; sourceTree = "<group>"; };
 		D9F118CEA63E46280CFFA888 /* Pods-imGuruPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imGuruPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imGuruPlugin/Pods-imGuruPlugin.debug.xcconfig"; sourceTree = "<group>"; };
 		F9D3E22C3BD5CDC34033D435 /* Pods_imGuruPlugin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imGuruPlugin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,10 +150,11 @@
 		A509110F1AA795DE00C93152 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A563F16228705F490066F03F /* MainMenu.xib */,
 				A50911201AA79B5100C93152 /* imGuru.entitlements */,
-				A50911101AA795DE00C93152 /* MainMenu.xib */,
 				A50911121AA795DE00C93152 /* Images.xcassets */,
 				A50911131AA795DE00C93152 /* Info.plist */,
+				A5E0FC722870638E00DD9868 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -163,9 +177,10 @@
 			children = (
 				A53403F71AA8D90000631B2C /* ShareViewController.h */,
 				A53403F81AA8D90000631B2C /* ShareViewController.m */,
-				A53403FA1AA8D90000631B2C /* ShareViewController.xib */,
+				A563F16A287060720066F03F /* ShareViewController.xib */,
 				A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */,
 				A53403F21AA8D90000631B2C /* Supporting Files */,
+				A5E0FC79287067D600DD9868 /* Localizable.strings */,
 			);
 			path = imgur;
 			sourceTree = "<group>";
@@ -333,6 +348,7 @@
 				en,
 				Base,
 				ru,
+				uk,
 			);
 			mainGroup = A5CB44D11AA794F70037C615;
 			productRefGroup = A5CB44DB1AA794F70037C615 /* Products */;
@@ -352,7 +368,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */,
-				A53403FB1AA8D90000631B2C /* ShareViewController.xib in Resources */,
+				A5E0FC77287067D600DD9868 /* Localizable.strings in Resources */,
+				A563F168287060720066F03F /* ShareViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,8 +377,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A547EBFC1B3C202800F72EC8 /* MainMenu.xib in Resources */,
 				A50911191AA795DE00C93152 /* Images.xcassets in Resources */,
+				A5E0FC702870638E00DD9868 /* Localizable.strings in Resources */,
+				A563F16028705F490066F03F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,13 +492,46 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A50911101AA795DE00C93152 /* MainMenu.xib */ = {
+		A563F16228705F490066F03F /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A50911111AA795DE00C93152 /* Base */,
-				A5D57F001AA8F524002C181D /* ru */,
+				A563F16128705F490066F03F /* Base */,
+				A563F16428705F4E0066F03F /* en */,
+				A563F16628705F500066F03F /* ru */,
+				A563F16728705F630066F03F /* uk */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A563F16A287060720066F03F /* ShareViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A563F169287060720066F03F /* Base */,
+				A563F16C287060750066F03F /* en */,
+				A563F16E287060750066F03F /* ru */,
+				A563F170287060760066F03F /* uk */,
+			);
+			name = ShareViewController.xib;
+			sourceTree = "<group>";
+		};
+		A5E0FC722870638E00DD9868 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E0FC712870638E00DD9868 /* en */,
+				A5E0FC732870639000DD9868 /* ru */,
+				A5E0FC742870639100DD9868 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A5E0FC79287067D600DD9868 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E0FC78287067D600DD9868 /* en */,
+				A5E0FC7A287067D800DD9868 /* ru */,
+				A5E0FC7B287067D900DD9868 /* uk */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
