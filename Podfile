@@ -1,8 +1,8 @@
-platform :osx, '10.13'
+platform :osx, '10.15'
 use_frameworks!
 
 def default_pods
-    pod 'ImgurSession', :git => 'https://github.com/Stitch7/ImgurSession.git'
+    pod 'ImgurSession', :git => 'https://github.com/IGRSoft/ImgurSession.git'
 end
 
 target 'imGuru' do

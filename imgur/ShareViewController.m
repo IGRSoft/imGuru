@@ -89,8 +89,8 @@
         if (self.userSettings.bCopyLink)
         {
             NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];
-            [pasteBoard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
-            [pasteBoard setString:[image.url absoluteString] forType:NSStringPboardType];
+            [pasteBoard declareTypes:[NSArray arrayWithObject:NSPasteboardTypeString] owner:nil];
+            [pasteBoard setString:[image.url absoluteString] forType:NSPasteboardTypeString];
         }
         
         NSUInteger options = NSNotificationDeliverImmediately | NSNotificationPostToAllSessions;
