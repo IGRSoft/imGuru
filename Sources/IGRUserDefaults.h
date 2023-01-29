@@ -13,6 +13,9 @@
 @property (nonatomic, assign) BOOL bCopyLink;
 @property (nonatomic, assign) BOOL bUseSound;
 @property (nonatomic, strong) NSString *sRefreshToken;
+@property (nonatomic, strong, readonly) NSArray<NSString *> *history;
+
+- (void)updateHistory:(NSString *)url;
 
 - (void)loadUserSettings;
 - (void)saveUserSettings;

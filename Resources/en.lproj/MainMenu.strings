@@ -22,3 +22,6 @@
 
 /* Class = "NSButtonCell"; title = "IGR Software"; ObjectID = "jwE-tw-Jyb"; */
 "jwE-tw-Jyb.title" = "IGR Software";
+
+/* Class = "NSTextFieldCell"; title = "history"; ObjectID = "Z87-2x-iy5"; */
+"Z87-2x-iy5.title" = "History:";

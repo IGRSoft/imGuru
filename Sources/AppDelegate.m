@@ -18,6 +18,8 @@
 @property (weak) IBOutlet NSButton    *connectButton;
 @property (weak) IBOutlet NSTextField *pinTextField;
 @property (weak) IBOutlet NSTextField *stateLabel;
+@property (weak) IBOutlet NSStackView *historyStackView;
+@property (weak) IBOutlet NSStackView *historyListStackView;
 
 @property (nonatomic) IGRUserDefaults *userSettings;
 
@@ -36,7 +38,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        self.userSettings = [[IGRUserDefaults alloc] init];
+        self.userSettings = IGRUserDefaults.new;
     }
     
     return self;
@@ -70,6 +72,8 @@
 }
 
 - (void)applicationDidBecomeActive:(NSNotification *)notification {
+    self.userSettings = IGRUserDefaults.new;
+    
     if (self.waitingAuth) {
         NSString *pin = [[NSPasteboard generalPasteboard] stringForType:NSPasteboardTypeString];
         if (pin.length == 10) {
@@ -80,6 +84,8 @@
     
     [self.window makeKeyAndOrderFront:self];
     [self.window center];
+    
+    [self updateHistory];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender{
@@ -122,6 +128,33 @@
 
 - (IBAction)siteTapped:(id)sender {
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://igrsoft.com"]];
+}
+
+- (void)updateHistory {
+    NSArray<NSString *> *history = self.userSettings.history;
+    BOOL hasHistory = history.count > 0;
+    
+    self.historyStackView.hidden = !hasHistory;
+    
+    NSArray *list = self.historyListStackView.arrangedSubviews;
+    for (NSView *view in list) {
+        [self.historyListStackView removeArrangedSubview:view];
+        [view removeFromSuperview];
+    }
+    
+    for (NSString *url in history) {
+        NSButton *button = [NSButton buttonWithTitle:url target:self action:@selector(openImageUrl:)];
+        button.bezelStyle = NSBezelStyleInline;
+        
+        [self.historyListStackView addArrangedSubview:button];
+    }
+    
+    [self.historyStackView needsLayout];
+}
+
+- (IBAction)openImageUrl:(NSButton *)sender {
+    NSURL *url = [NSURL URLWithString:sender.title];
+    [[NSWorkspace sharedWorkspace] openURL:url];
 }
 
 - (IBAction)saveSettings:(id)sender {

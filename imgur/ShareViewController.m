@@ -86,6 +86,8 @@
         NSLog(@"Image Upload file: %@", image.url);
         [self playSystemSound:@"Glass"];
         
+        [self.userSettings updateHistory:image.url.absoluteString];
+        
         if (self.userSettings.bCopyLink)
         {
             NSPasteboard *pasteBoard = [NSPasteboard generalPasteboard];

@@ -14,7 +14,7 @@
 		A53403F91AA8D90000631B2C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53403F81AA8D90000631B2C /* ShareViewController.m */; };
 		A563F16028705F490066F03F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A563F16228705F490066F03F /* MainMenu.xib */; };
 		A563F168287060720066F03F /* ShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A563F16A287060720066F03F /* ShareViewController.xib */; };
-		A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A53403F01AA8D90000631B2C /* imGuruPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A53403F01AA8D90000631B2C /* imGuruPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A5CB44F41AA794F70037C615 /* imGuruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CB44F31AA794F70037C615 /* imGuruTests.m */; };
 		A5D57EFE1AA8E725002C181D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5D57EFD1AA8E725002C181D /* AudioToolbox.framework */; };
 		A5D57EFF1AA8F357002C181D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50911121AA795DE00C93152 /* Images.xcassets */; };
@@ -43,15 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A509138C1AA85CE200C93152 /* Embed App Extensions */ = {
+		A509138C1AA85CE200C93152 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed App Extensions */,
+				A5943D0A1B46A7D4001FA01D /* imGuruPlugin.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -74,11 +74,9 @@
 		A53403F81AA8D90000631B2C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 		A563F16128705F490066F03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A563F16428705F4E0066F03F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
-		A563F16628705F500066F03F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		A563F16728705F630066F03F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		A563F169287060720066F03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ShareViewController.xib; sourceTree = "<group>"; };
 		A563F16C287060750066F03F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ShareViewController.strings; sourceTree = "<group>"; };
-		A563F16E287060750066F03F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/ShareViewController.strings; sourceTree = "<group>"; };
 		A563F170287060760066F03F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/ShareViewController.strings; sourceTree = "<group>"; };
 		A5CB44DA1AA794F70037C615 /* imGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CB44ED1AA794F70037C615 /* imGuruTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imGuruTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,10 +87,8 @@
 		A5D57F081AA99BC0002C181D /* IGRUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGRUserDefaults.h; sourceTree = "<group>"; };
 		A5D57F091AA99BC0002C181D /* IGRUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGRUserDefaults.m; sourceTree = "<group>"; };
 		A5E0FC712870638E00DD9868 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A5E0FC732870639000DD9868 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A5E0FC742870639100DD9868 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A5E0FC78287067D600DD9868 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		A5E0FC7A287067D800DD9868 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A5E0FC7B287067D900DD9868 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B24F99BF7AD41D2E3DE76B73 /* Pods-imGuru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imGuru.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imGuru/Pods-imGuru.debug.xcconfig"; sourceTree = "<group>"; };
 		D9F118CEA63E46280CFFA888 /* Pods-imGuruPlugin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imGuruPlugin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imGuruPlugin/Pods-imGuruPlugin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -263,7 +259,7 @@
 				A3B808439916B6682F142727 /* [CP] Check Pods Manifest.lock */,
 				A5CB44D61AA794F70037C615 /* Sources */,
 				A5CB44D81AA794F70037C615 /* Resources */,
-				A509138C1AA85CE200C93152 /* Embed App Extensions */,
+				A509138C1AA85CE200C93152 /* Embed Foundation Extensions */,
 				93A9A1A6E7E79D70BBFD81B7 /* Frameworks */,
 				0CBD8068C915D780CEEA7454 /* [CP] Embed Pods Frameworks */,
 			);
@@ -303,7 +299,7 @@
 			attributes = {
 				CLASSPREFIX = IGR;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "IGR Software";
 				TargetAttributes = {
 					A53403EF1AA8D90000631B2C = {
@@ -347,7 +343,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ru,
 				uk,
 			);
 			mainGroup = A5CB44D11AA794F70037C615;
@@ -497,7 +492,6 @@
 			children = (
 				A563F16128705F490066F03F /* Base */,
 				A563F16428705F4E0066F03F /* en */,
-				A563F16628705F500066F03F /* ru */,
 				A563F16728705F630066F03F /* uk */,
 			);
 			name = MainMenu.xib;
@@ -508,7 +502,6 @@
 			children = (
 				A563F169287060720066F03F /* Base */,
 				A563F16C287060750066F03F /* en */,
-				A563F16E287060750066F03F /* ru */,
 				A563F170287060760066F03F /* uk */,
 			);
 			name = ShareViewController.xib;
@@ -518,7 +511,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A5E0FC712870638E00DD9868 /* en */,
-				A5E0FC732870639000DD9868 /* ru */,
 				A5E0FC742870639100DD9868 /* uk */,
 			);
 			name = Localizable.strings;
@@ -528,7 +520,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				A5E0FC78287067D600DD9868 /* en */,
-				A5E0FC7A287067D800DD9868 /* ru */,
 				A5E0FC7B287067D900DD9868 /* uk */,
 			);
 			name = Localizable.strings;
@@ -548,6 +539,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 112;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -586,6 +578,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 112;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
@@ -640,6 +633,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 109;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -696,6 +690,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 109;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -726,6 +721,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 112;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
@@ -736,6 +732,7 @@
 					"$(SRCROOT)/Submodules/AFNetworking/AFNetworking",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -759,6 +756,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 112;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
@@ -769,6 +767,7 @@
 					"$(SRCROOT)/Submodules/AFNetworking/AFNetworking",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -785,6 +784,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -810,6 +810,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
