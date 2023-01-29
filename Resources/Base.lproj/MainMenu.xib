@@ -27,17 +27,17 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <window title="imGuru - Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
-            <rect key="contentRect" x="335" y="390" width="342" height="263"/>
+            <rect key="contentRect" x="335" y="390" width="342" height="213"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1728" height="1079"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="342" height="286"/>
+                <rect key="frame" x="0.0" y="0.0" width="342" height="213"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="13" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gec-VR-BKq">
-                        <rect key="frame" x="16" y="50" width="310" height="220"/>
+                        <rect key="frame" x="16" y="50" width="310" height="147"/>
                         <subviews>
                             <stackView distribution="fill" orientation="horizontal" alignment="centerY" spacing="11" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOW-dp-eC4">
-                                <rect key="frame" x="0.0" y="200" width="181" height="20"/>
+                                <rect key="frame" x="0.0" y="127" width="181" height="20"/>
                                 <subviews>
                                     <button focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-yU-MV0">
                                         <rect key="frame" x="-7" y="-7" width="92" height="32"/>
@@ -87,10 +87,10 @@
                                 </customSpacing>
                             </stackView>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="6mF-1S-8ll">
-                                <rect key="frame" x="0.0" y="184" width="310" height="5"/>
+                                <rect key="frame" x="0.0" y="111" width="310" height="5"/>
                             </box>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWP-qS-Rvp">
-                                <rect key="frame" x="0.0" y="133" width="158" height="40"/>
+                                <rect key="frame" x="0.0" y="60" width="158" height="40"/>
                                 <subviews>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="4wk-b5-v3h">
                                         <rect key="frame" x="-2" y="23" width="160" height="18"/>
@@ -124,8 +124,8 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
-                            <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="13" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ssg-cP-ubf">
-                                <rect key="frame" x="0.0" y="57" width="310" height="63"/>
+                            <stackView hidden="YES" distribution="fill" orientation="vertical" alignment="leading" spacing="13" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ssg-cP-ubf">
+                                <rect key="frame" x="0.0" y="84" width="310" height="63"/>
                                 <subviews>
                                     <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="wIB-s6-9QH">
                                         <rect key="frame" x="0.0" y="60" width="310" height="5"/>
@@ -154,10 +154,10 @@
                                 </customSpacing>
                             </stackView>
                             <box horizontalHuggingPriority="248" verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="8jr-M5-LEA">
-                                <rect key="frame" x="0.0" y="41" width="310" height="5"/>
+                                <rect key="frame" x="0.0" y="44" width="310" height="5"/>
                             </box>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-zI-h34">
-                                <rect key="frame" x="-2" y="14" width="201" height="16"/>
+                                <rect key="frame" x="-2" y="14" width="201" height="19"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Context Menu -&gt; Share -&gt; imgur" id="aT2-qM-iHo">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -207,7 +207,7 @@
                     <constraint firstItem="TNh-4Q-heU" firstAttribute="top" secondItem="gec-VR-BKq" secondAttribute="bottom" constant="16" id="uof-wF-EkG"/>
                 </constraints>
             </view>
-            <point key="canvasLocation" x="337" y="379.5"/>
+            <point key="canvasLocation" x="337" y="354.5"/>
         </window>
     </objects>
 </document>
