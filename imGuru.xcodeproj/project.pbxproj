@@ -538,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 117;
+				CURRENT_PROJECT_VERSION = 118;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -559,7 +559,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igrsoft.imGuru.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -577,7 +577,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 117;
+				CURRENT_PROJECT_VERSION = 118;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -594,7 +594,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igrsoft.imGuru.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -720,7 +720,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 117;
+				CURRENT_PROJECT_VERSION = 118;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -737,7 +737,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igrsoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -755,7 +755,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 117;
+				CURRENT_PROJECT_VERSION = 118;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = DMP42GVPJ3;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -772,7 +772,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.igrsoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
